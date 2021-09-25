@@ -1,0 +1,71 @@
+aside {
+    position:fixed;
+    height:100%;
+    width:120px;
+    left:0;
+    top:0;
+    background-color:rgb(39, 153, 100) ;
+    overflow:auto;
+}
+
+aside a {
+    display:block;
+    text-decoration: none;
+    color:white;
+    padding:15px;
+    background-color:rgb(26, 78, 68);
+    margin:1px;
+    border:solid;
+    border-width:1px;
+    border-color:rgb(124, 216, 196);
+}
+
+aside a:hover {
+    background-color:grey;
+}
+
+/* BLUE AND RED NEED TO CHANGE THE WAY WE IMPLEMENT THE SIDEBAR */
+/*DO NOT MAKE SCROLL BAR FIXED*/
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        aside {
+            position:relative;
+            width:100%;
+            margin:0;
+            padding:0;
+            left:0;
+            top:0;
+        }
+        aside a {
+            display:block;
+            text-decoration: none;
+            color:white;
+            padding:5px;
+            text-align: center;
+        }
+    
+    }
+    
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        /*Put above from here*/
+    }
+    
+    
+    /* IT IS ALRIGHT UNTIL THERE */
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+
+    }
+    
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+
+    }
+    
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+
+    } 
+    
