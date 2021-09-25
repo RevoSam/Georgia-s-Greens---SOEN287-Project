@@ -68,6 +68,7 @@ html {
 
 #firstLink {
   float: left;
+  width: 100%;
 }
 
 .menu a:hover {
@@ -108,4 +109,38 @@ img {
     padding: 8px;
     border: 1px solid rgb(0, 88, 59);
   }
+
+  .dropdown #firstLink {
+    width: 100%;
+  }
+
+  .dropdown-content .dropdown-menu {
+    width: 100%;
+  }
+}
+
+.dropdown {
+  width: 15%;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 50%;
+  z-index: 1;
+}
+
+.dropdown-content .dropdown-menu {
+  width: 100%;
+  color: black;
+  padding: 8px;
+  text-decoration: none;
+  display: block;
 }
