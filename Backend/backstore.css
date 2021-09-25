@@ -1,10 +1,33 @@
+header {
+    background-color:rgb(189, 221, 206);
+    padding:10px;
+    margin-left:120px;
+    height:70px;
+}
+
+.welcome {
+    margin-left:1%;
+}
+
+.icon {
+    margin-left:3%;
+}
+
+.date {
+    margin-left:50%;
+    margin-top:10px;
+    margin-right:3%;
+}
+img {
+    margin-bottom:10px;
+}
 aside {
     position:fixed;
     height:100%;
     width:120px;
     left:0;
     top:0;
-    background-color:rgb(39, 153, 100) ;
+    background-color:rgb(189, 221, 206) ;
     overflow:auto;
 }
 
@@ -24,10 +47,42 @@ aside a:hover {
     background-color:grey;
 }
 
-/* BLUE AND RED NEED TO CHANGE THE WAY WE IMPLEMENT THE SIDEBAR */
-/*DO NOT MAKE SCROLL BAR FIXED*/
+.inventory {
+    margin-left:150px;
+    margin-right:30px;
+    background-color:rgb(171, 238, 153);
+}
+
+footer {
+    background-color:rgb(189, 221, 206);
+    padding:10px;
+    margin-left:120px;
+}
+
+.margins{
+    background-color:rgb(189, 221, 206);
+}
+
+.inventory table{
+    border: 1px solid black;
+    width:100%;
+}
+
+.inventory th, .inventory td{
+    width:10%;
+    height:50px;
+    text-align:center;
+}
+
+
+
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
+        header {
+            width:100%;
+            margin-left:0;
+        }
+
         aside {
             position:relative;
             width:100%;
@@ -43,29 +98,8 @@ aside a:hover {
             padding:5px;
             text-align: center;
         }
-    
+        .inventory {
+            width:100%;
+            margin-left:0;
+        }
     }
-    
-    /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (min-width: 600px) {
-        /*Put above from here*/
-    }
-    
-    
-    /* IT IS ALRIGHT UNTIL THERE */
-    
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-
-    }
-    
-    /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (min-width: 992px) {
-
-    }
-    
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-
-    } 
-    
