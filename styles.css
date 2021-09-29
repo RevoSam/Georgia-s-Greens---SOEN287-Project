@@ -33,6 +33,9 @@ html {
   .col-4 {
     width: 100%;
   }
+  .body {
+    width: 80%;
+  }
 }
 
 .row::after {
@@ -75,7 +78,6 @@ html {
 
 .menu a:hover {
   background-color: rgb(33, 105, 0);
-  ;
   color: white;
   cursor: pointer;
 }
@@ -126,6 +128,10 @@ img {
   .dropdown-content .dropdown-menu {
     width: 100%;
   }
+
+  .body {
+    width: 100%;
+  }
 }
 
 .dropdown {
@@ -152,4 +158,63 @@ img {
   padding: 8px;
   text-decoration: none;
   display: block;
+}
+
+.footer {
+  border: 1px solid black;
+  background-color: rgb(33, 105, 0);
+  text-align: center;
+  color: #f1f1f1;
+  width: 100%;
+  position: absolute;
+}
+
+#link-list-left {
+  display: inline;
+  float: left;
+  padding: 25px;
+}
+
+#link-list-right {
+  display: inline;
+  float: left;
+  padding: 25px;
+}
+
+#contact-info {
+  padding-top: 50px;
+  padding-right: 100px;
+  display: inline;
+  float: right;
+}
+.body {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid black;
+}
+.ailes_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.ailes_wrapper h1 {
+  color: black;
+  box-sizing: border-box;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  width: auto;
+}
+
+.ailes_wrapper h2 {
+  color: black;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  width: auto;
+}
+
+.ailes {
+  width: 100%;
 }
