@@ -8,30 +8,70 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body>
-        <header>
-            <span class = "edit-title"><b>Edit Form</b></span>
-        </header>
-        <aside>
-            <h1><img src="/assets/GGLogo.png" width="100px"></h1> <!--Put logo and name-->
-                <a href = "$"><span class = "glyphicon glyphicon-tags"></span>&nbsp&nbspProducts</a>
-                <a href = "$"><span class = "glyphicon glyphicon-user"></span>&nbsp&nbspUsers</a>
-                <a href="$"><span class = "glyphicon glyphicon-credit-card"></span>&nbsp&nbspOrders</a>
-        </aside>
-        <div class = "margins">
-            <div class = "edit-form">
-                <div  class = "circled-picture">Product Picture here</div>
-                <label for="product-name">Product Name</label><br>
-                <input type="text" name ="produce-name"/><br>
-                <label for="product-price">Price</label><br>
-                <input type="text" name ="produce-price"/><br>
-                <label for="product-qty">Quantity</label><br>
-                <input type="text" name ="produce-qty"/><br>
-                <label for="product-department">Departement</label><br>
-                <input type="text" name ="produce-department"/><br>
-                <label for="product-origin">Origin</label><br>
-                <input type="text" name ="produce-origin"/><br>
-                <label for="product-description">Description</label><br>
-                <input type="text" name ="produce-description"/><br>
+        <div class = "sidebar">
+           <p>Put any picture here</p>
+        </div>
+        <div class = "right-side">
+            <div class = "product-form">
+                <table>
+                    <tr>
+                       <td colspan="12"><div class="circled-picture"><p>Product pricture here!</p></div></td>
+                    </tr>
+                    <tr>
+                        <td class ="col-7" colspan="7">
+                            <label for="product-name">Product Name</label><br>
+                            <input type="text" name="product-name"/>
+                        </td>
+                        <td class = "col-2" colspan="2">
+                            <label for="product-name">Product Code</label><br>
+                            <input type="text" name="product-name"/>
+                        </td>
+                        <td class = "col-2" colspan="2">
+                            <label for="product-name">Quantity</label><br>
+                            <input type="text" name="product-name"/>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td class = "col-3" colspan="3">
+                                <label for="product-price">Price</label><br>
+                                <input type="text" name="product-price"/>
+                            </td>
+                            <td class = "col-3" colspan="3">
+                                <label for="is-product-discount">Price Discount</label><br>
+                                <input type="text" name="is-product-discount"/>
+                            </td>
+                            <td class = "col-3" colspan="3">
+                                <label for="product-discount">Price Discount</label><br>
+                                <input type="text" name="product-discount"/>
+                            </td>
+                            <td class = "col-3" colspan="3">
+                                <label for="product-discount-until">Until</label><br>
+                                <input type="text" name="product-discount-until"/>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class = "col-2" colspan="2">
+                            <label for="product-origin">Origin</label><br>
+                            <input type="text" name="product-origin"/>
+                        </td>
+                        <td class = "col-10" colspan="10">
+                            <label for="product-short-description">Short Description</label><br>
+                            <input type="text" name="product-short-description"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class ="col-12" colspan="12">
+                            <label for="product-long-description">Long Description</label><br>
+                            <textarea name="product-long-description" rows="8" cols="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr class = "button-row">
+                        <td colspan="12">
+                            <button type="button" id="save-button">Save</button>
+                            <button type="button" id="cancel-button">Cancel</button> 
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </body>
