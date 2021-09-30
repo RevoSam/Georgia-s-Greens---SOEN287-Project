@@ -1,9 +1,15 @@
+
+
 header {
     background-color:rgb(189, 221, 206);
     padding:10px;
     margin-left:120px;
     height:70px;
 
+}
+
+html {
+    background-color:rgb(189, 221, 206);
 }
 
 .welcome {
@@ -48,6 +54,7 @@ footer {
     height:100%;
     background-color:rgb(189, 221, 206);
     padding:25px;
+    margin-left:120px;
 }
 
 .margins{
@@ -58,6 +65,7 @@ footer {
     border: 1px solid black;
     width:100%;
     height:95%;
+    margin-bottom:70px;
 }
 
 .inventory th, .inventory td{
