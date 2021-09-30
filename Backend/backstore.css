@@ -3,24 +3,15 @@ header {
     padding:10px;
     margin-left:120px;
     height:70px;
+
 }
 
 .welcome {
-    margin-left:1%;
+    margin-left:20px;
+    font-size:40px;
+    color:rgb(44, 99, 81);
 }
 
-.icon {
-    margin-left:3%;
-}
-
-.date {
-    margin-left:50%;
-    margin-top:10px;
-    margin-right:3%;
-}
-img {
-    margin-bottom:10px;
-}
 aside {
     position:fixed;
     height:100%;
@@ -54,9 +45,9 @@ aside a:hover {
 }
 
 footer {
+    height:100%;
     background-color:rgb(189, 221, 206);
-    padding:10px;
-    margin-left:120px;
+    padding:25px;
 }
 
 .margins{
@@ -66,6 +57,7 @@ footer {
 .inventory table{
     border: 1px solid black;
     width:100%;
+    height:95%;
 }
 
 .inventory th, .inventory td{
