@@ -1,0 +1,123 @@
+html {
+    background-color:rgb(189, 221, 206) ;
+}
+
+header {
+    background-color:rgb(189, 221, 206);
+    padding:10px;
+    margin-left:120px;
+    height:70px;
+    text-align:center;
+}
+
+
+aside {
+    position:fixed;
+    height:100%;
+    width:120px;
+    left:0;
+    top:0;
+    background-color:rgb(189, 221, 206) ;
+    overflow:auto;
+}
+
+aside a {
+    display:block;
+    text-decoration: none;
+    color:white;
+    padding:15px;
+    background-color:rgb(26, 78, 68);
+    margin:1px;
+    border:solid;
+    border-width:1px;
+    border-color:rgb(124, 216, 196);
+}
+
+aside a:hover {
+    background-color:grey;
+}
+
+.edit-title {
+    margin-left:20px;
+    font-size:40px;
+    color:rgb(44, 99, 81);
+    background-color:pink;
+}
+
+
+label {
+    margin:40px;
+    font-size:20px;
+}
+
+input, select {
+    width:60%;
+    padding:10px;
+}
+
+.edit-form { /*Does not adapt yet*/
+    margin-left:auto;
+    margin-right:auto;
+    border:black;
+    background-color: white;
+    text-align:center;
+    background-color:rgb(171, 238, 153);
+    padding:20px;
+    border: 1px solid black;
+    width:50%;
+}
+
+.circled-picture
+{
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    display:block;
+    border-color:black;
+    border-style:solid;
+    border-width: 5px;
+}
+
+.myform {
+    margin-top:10px;
+}
+
+.margins{
+    background-color:rgb(189, 221, 206);
+    margin-left:120px;
+    padding:25px;
+}
+
+
+
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        header {
+            width:100%;
+            margin-left:0;
+        }
+
+        aside {
+            position:relative;
+            width:100%;
+            margin:0;
+            padding:0;
+            left:0;
+            top:0;
+        }
+        aside a {
+            display:block;
+            text-decoration: none;
+            color:white;
+            padding:5px;
+            text-align: center;
+        }
+        .inventory {
+            width:100%;
+            margin-left:0;
+        }
+    }
