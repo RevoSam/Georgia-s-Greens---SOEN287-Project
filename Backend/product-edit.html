@@ -36,21 +36,21 @@
                                 <label for="product-price">Price</label><br>
                                 <input type="text" name="product-price"/>
                             </td>
-                            <td class = "col-3" colspan="3">
-                                <label for="is-product-discount">Price Discount</label><br>
-                                <input type="text" name="is-product-discount"/>
-                            </td>
-                            <td class = "col-3" colspan="3">
-                                <label for="product-discount">Price Discount</label><br>
+                            <td class = "col-3 pd" colspan="3">
+                                <label for="product-discount">Discount</label><br>
                                 <input type="text" name="product-discount"/>
                             </td>
+                            <td class = "col-3 date" colspan="3">
+                                <label for="discount-date">Discount End Date</label>
+                                <input type="date" id="discount-date" name="discount-date">
+                            </td>
                             <td class = "col-3" colspan="3">
-                                <label for="product-discount-until">Until</label><br>
-                                <input type="text" name="product-discount-until"/>
+                                <label for="is-discount">Discount?</label>
+                                <input type="checkbox" id="is-discount" name="is-discount" value="is-discount">
                             </td>
                     </tr>
                     <tr>
-                        <td class = "col-2" colspan="2">
+                        <td class = "col-2 origin" colspan="2">
                             <label for="product-origin">Origin</label><br>
                             <input type="text" name="product-origin"/>
                         </td>
@@ -62,7 +62,7 @@
                     <tr>
                         <td class ="col-12" colspan="12">
                             <label for="product-long-description">Long Description</label><br>
-                            <textarea name="product-long-description" rows="8" cols="10"></textarea>
+                            <textarea name="product-long-description" rows="7" cols="10"></textarea>
                         </td>
                     </tr>
                     <tr class = "button-row">

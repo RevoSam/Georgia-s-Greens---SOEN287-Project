@@ -8,13 +8,6 @@ html {
     width:40%;
     background-color: cadetblue;
 }
-.sidebar p {
-    font-size:120px;
-    margin-right:10px;
-    margin-top:350px;
-    float:right;
-    color:rgb(201, 201, 47)
-}
 
 .right-side {
     position:relative;
@@ -26,14 +19,13 @@ html {
 
 
 table {
-    border:1px black solid;
     margin-left:auto;
     margin-right:auto;
     width:80%;
+    margin-top:3%;
 }
 
 tr {
-    background-color:rgb(169, 233, 233);
     text-align:center;
     height:100px;
 }
@@ -41,6 +33,7 @@ tr {
 input{
     width:80%;
     height:30px;
+    padding:25px;
 }
 
 .col-2 input {
@@ -60,6 +53,10 @@ input{
 
 .col-12 input {
     width:100%;
+}
+
+.date input{
+    text-align: center;
 }
 
 .ta {
@@ -104,33 +101,113 @@ button {
     margin-left:100px;
 }
 
-
-
-
     /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 600px) {
-        header {
+    @media only screen and (max-width: 1000px) {
+        .sidebar{
+            position:fixed;
             width:100%;
-            margin-left:0;
+            height:5%;
         }
 
-        aside {
+        .right-side {
             position:relative;
+            float:none;
+            margin-top:1%;
             width:100%;
-            margin:0;
-            padding:0;
-            left:0;
-            top:0;
+            background-color:rgb(189, 221, 206) ;
         }
-        aside a {
-            display:block;
-            text-decoration: none;
-            color:white;
-            padding:5px;
-            text-align: center;
+        
+        table {
+            margin-top:20%;
+            border:none;
+            background-color:rgb(189, 221, 206) ;
         }
-        .inventory {
+        tr {
+            background-color:rgb(189, 221, 206) ;
+        }
+        input{
+            padding:1%;
+        }
+
+        .circled-picture{
+            background-color:violet;
+        }
+    }
+
+    @media only screen and (max-width: 600px){
+        
+        .sidebar{
+            display:none;
+        }
+        .circled-picture{
+            background-color:rgb(255, 0, 0);
+            width:100px;
+            height:100px;
+            margin-top:5px;
+        }
+        .circled-picture p {
+            margin-top:25px;
+        }
+
+
+        table {
+            float:left;
             width:100%;
-            margin-left:0;
+        }
+    
+        .col-3{
+            width:25%;
+        }
+
+        
+        .date{
+            width:40%;
+        }
+
+        label{
+            font-size:11px;
+        }
+
+        textarea {
+            height:1%;
+        }
+
+    }
+
+    @media only screen and (max-width: 340px){
+        
+        .sidebar{
+            display:none;
+        }
+        .circled-picture{
+            background-color:rgb(0, 174, 255);
+            width:100px;
+            height:100px;
+            margin-top:5px;
+        }
+        .circled-picture p {
+            margin-top:25px;
+        }
+
+
+        table {
+            float:left;
+            width:100%;
+        }
+    
+        tr{
+            width:100%;
+        }
+
+        label{
+            font-size:11px;
+        }
+
+        textarea {
+            height:1%;
+        }
+
+        .col-10{
+            
         }
     }
