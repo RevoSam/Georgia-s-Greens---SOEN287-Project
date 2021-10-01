@@ -1,23 +1,22 @@
-
+html {
+    background-color:rgb(189, 221, 206);
+}
 
 header {
     background-color:rgb(189, 221, 206);
     padding:10px;
     margin-left:120px;
     height:70px;
-
 }
 
-html {
-    background-color:rgb(189, 221, 206);
-}
-
+/*Welcome message*/
 .welcome {
     margin-left:20px;
     font-size:40px;
     color:rgb(44, 99, 81);
 }
 
+/*Side Bar*/
 aside {
     position:fixed;
     height:100%;
@@ -42,14 +41,17 @@ aside a {
 
 aside a:hover {
     background-color:grey;
+    text-decoration:none;
 }
 
+/*Section where the products will be stored*/
 .inventory {
     margin-left:150px;
     margin-right:30px;
     background-color:rgb(171, 238, 153);
 }
 
+/*Space under inventory table*/
 footer {
     height:100%;
     background-color:rgb(189, 221, 206);
@@ -57,10 +59,12 @@ footer {
     margin-left:120px;
 }
 
+/*Color side of table*/
 .margins{
     background-color:rgb(189, 221, 206);
 }
 
+/*Inventory table*/
 .inventory table{
     border: 1px solid black;
     width:100%;
@@ -68,16 +72,21 @@ footer {
     margin-bottom:70px;
 }
 
+/*Rows and data of inventory table*/
 .inventory th, .inventory td{
     width:10%;
     height:50px;
     text-align:center;
 }
 
+td a
+{
+text-decoration: underline;
+}
 
 
-    /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 600px) {
+/* Small Screens */
+    @media only screen and (max-width: 700px) {
         header {
             width:100%;
             margin-left:0;
@@ -101,5 +110,56 @@ footer {
         .inventory {
             width:100%;
             margin-left:0;
+        }
+
+        .inventory td {
+            width:60%;
+        }
+        .hide-on-small {
+            display:none;
+        }
+        img {
+            display:none;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        header {
+            width:100%;
+            margin-left:0;
+        }
+
+        aside {
+            position:relative;
+            width:100%;
+            margin:0;
+            padding:0;
+            left:0;
+            top:0;
+        }
+
+        aside a {
+            display:block;
+            text-decoration: none;
+            color:white;
+            padding:5px;
+            text-align: center;
+        }
+
+        .inventory {
+            width:100%;
+            margin-left:0;
+        }
+
+        .welcome {
+            font-size:25px;
+        }
+
+        .hide-on-medium {
+            display:none;
+        }
+
+        img {
+            display:none;
         }
     }
