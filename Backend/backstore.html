@@ -1,647 +1,835 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Product List</title>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" href="backstore.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    </head>
-    <body>
-        <header>
-            <span class = "welcome"><b>Welcome User!</b></span>
-        </header>
-        <aside>
-            <h1><img src="/assets/GGLogo.png"></h1> <!--Put logo and name-->
-                <a href = "$"><span class = "glyphicon glyphicon-tags"></span>&nbsp&nbspProducts</a>
-                <a href = "$"><span class = "glyphicon glyphicon-user"></span>&nbsp&nbspUsers</a>
-                <a href="$"><span class = "glyphicon glyphicon-credit-card"></span>&nbsp&nbspOrders</a>
-        </aside>
-        
-        <div class = "margins">
-            <div class = "inventory">
-                <div class = "product">
-                    <div class = "name-space">
-                        <p>NAME</p>
-                    </div>
-                    <div class = "department-space">
-                        <p>DEPARTMENT</p>
-                    </div>
-                    <div class = "price-space">
-                        <p>PRICE</p>
-                    </div>
-                    <div class = "quantity-space">
-                        <p>QUANTITY</p>
-                    </div>
-                    <div class = "origin-space">
-                        <p>ORIGIN</p>
-                    </div>
-                    <div class = "edit-space">
-                        <p>EDIT</p>
-                    </div>
-                    <div class = "delete-space">
-                        <p>DELETE</p>
-                    </div>
+
+<head>
+    <title>Product List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="backstore.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <p>Welcome User!</p>
+    </header>
+    <aside>
+        <img src="/assets/GGLogo.png">
+        <!--Put logo and name-->
+        <a href="$"><span class="glyphicon glyphicon-tags"></span>&nbsp&nbspProducts</a>
+        <a href="$"><span class="glyphicon glyphicon-user"></span>&nbsp&nbspUsers</a>
+        <a href="$"><span class="glyphicon glyphicon-credit-card"></span>&nbsp&nbspOrders</a>
+    </aside>
+    <div class="additional-components">
+        <button type="button" id = "button-header">Add product</button>
+        <input type="text" placeholder="Search..">
+        <label for="search-keyword"><span class="glyphicon glyphicon-search"></span>&nbsp Search by keyword: </label> 
+    </div>
+    <div class="margins">
+        <div class="inventory-table">
+            <div class="ailes">
+                <p>Meat</p>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
                 </div>
-                <div class = "product">
-                    <div class = "name-space">
-                        <p>NAME</p>
-                    </div>
-                    <div class = "department-space">
-                        <p>DEPARTMENT</p>
-                    </div>
-                    <div class = "price-space">
-                        <p>PRICE</p>
-                    </div>
-                    <div class = "quantity-space">
-                        <p>QUANTITY</p>
-                    </div>
-                    <div class = "origin-space">
-                        <p>ORIGIN</p>
-                    </div>
-                    <div class = "edit-space">
-                        <p>EDIT</p>
-                    </div>
-                    <div class = "delete-space">
-                        <p>DELETE</p>
-                    </div>
+                <div class="name-container">
+                    <p>NAME</p>
                 </div>
-                <div class = "product">
-                    <div class = "name-space">
-                        <p>NAME</p>
-                    </div>
-                    <div class = "department-space">
-                        <p>DEPARTMENT</p>
-                    </div>
-                    <div class = "price-space">
-                        <p>PRICE</p>
-                    </div>
-                    <div class = "quantity-space">
-                        <p>QUANTITY</p>
-                    </div>
-                    <div class = "origin-space">
-                        <p>ORIGIN</p>
-                    </div>
-                    <div class = "edit-space">
-                        <p>EDIT</p>
-                    </div>
-                    <div class = "delete-space">
-                        <p>DELETE</p>
-                    </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
                 </div>
-                    <div class = "product">
-                        <div class = "name-space">
-                            <p>NAME</p>
-                        </div>
-                        <div class = "department-space">
-                            <p>DEPARTMENT</p>
-                        </div>
-                        <div class = "price-space">
-                            <p>PRICE</p>
-                        </div>
-                        <div class = "quantity-space">
-                            <p>QUANTITY</p>
-                        </div>
-                        <div class = "origin-space">
-                            <p>ORIGIN</p>
-                        </div>
-                        <div class = "edit-space">
-                            <p>EDIT</p>
-                        </div>
-                        <div class = "delete-space">
-                            <p>DELETE</p>
-                        </div>
-                    </div>
-                    <div class = "product">
-                        <div class = "name-space">
-                            <p>NAME</p>
-                        </div>
-                        <div class = "department-space">
-                            <p>DEPARTMENT</p>
-                        </div>
-                        <div class = "price-space">
-                            <p>PRICE</p>
-                        </div>
-                        <div class = "quantity-space">
-                            <p>QUANTITY</p>
-                        </div>
-                        <div class = "origin-space">
-                            <p>ORIGIN</p>
-                        </div>
-                        <div class = "edit-space">
-                            <p>EDIT</p>
-                        </div>
-                        <div class = "delete-space">
-                            <p>DELETE</p>
-                        </div>
-                    </div>
-                    <div class = "product">
-                        <div class = "name-space">
-                            <p>NAME</p>
-                        </div>
-                        <div class = "department-space">
-                            <p>DEPARTMENT</p>
-                        </div>
-                        <div class = "price-space">
-                            <p>PRICE</p>
-                        </div>
-                        <div class = "quantity-space">
-                            <p>QUANTITY</p>
-                        </div>
-                        <div class = "origin-space">
-                            <p>ORIGIN</p>
-                        </div>
-                        <div class = "edit-space">
-                            <p>EDIT</p>
-                        </div>
-                        <div class = "delete-space">
-                            <p>DELETE</p>
-                        </div>
-                    </div>
-                    <div class = "product">
-                        <div class = "name-space">
-                            <p>NAME</p>
-                        </div>
-                        <div class = "department-space">
-                            <p>DEPARTMENT</p>
-                        </div>
-                        <div class = "price-space">
-                            <p>PRICE</p>
-                        </div>
-                        <div class = "quantity-space">
-                            <p>QUANTITY</p>
-                        </div>
-                        <div class = "origin-space">
-                            <p>ORIGIN</p>
-                        </div>
-                        <div class = "edit-space">
-                            <p>EDIT</p>
-                        </div>
-                        <div class = "delete-space">
-                            <p>DELETE</p>
-                        </div>
-                    </div>
-                    <div class = "product">
-                        <div class = "name-space">
-                            <p>NAME</p>
-                        </div>
-                        <div class = "department-space">
-                            <p>DEPARTMENT</p>
-                        </div>
-                        <div class = "price-space">
-                            <p>PRICE</p>
-                        </div>
-                        <div class = "quantity-space">
-                            <p>QUANTITY</p>
-                        </div>
-                        <div class = "origin-space">
-                            <p>ORIGIN</p>
-                        </div>
-                        <div class = "edit-space">
-                            <p>EDIT</p>
-                        </div>
-                        <div class = "delete-space">
-                            <p>DELETE</p>
-                        </div>
-                    </div>
-                    <div class = "product">
-                        <div class = "name-space">
-                            <p>NAME</p>
-                        </div>
-                        <div class = "department-space">
-                            <p>DEPARTMENT</p>
-                        </div>
-                        <div class = "price-space">
-                            <p>PRICE</p>
-                        </div>
-                        <div class = "quantity-space">
-                            <p>QUANTITY</p>
-                        </div>
-                        <div class = "origin-space">
-                            <p>ORIGIN</p>
-                        </div>
-                        <div class = "edit-space">
-                            <p>EDIT</p>
-                        </div>
-                        <div class = "delete-space">
-                            <p>DELETE</p>
-                        </div>
-                    </div>
-                    <div class = "product">
-                        <div class = "name-space">
-                            <p>NAME</p>
-                        </div>
-                        <div class = "department-space">
-                            <p>DEPARTMENT</p>
-                        </div>
-                        <div class = "price-space">
-                            <p>PRICE</p>
-                        </div>
-                        <div class = "quantity-space">
-                            <p>QUANTITY</p>
-                        </div>
-                        <div class = "origin-space">
-                            <p>ORIGIN</p>
-                        </div>
-                        <div class = "edit-space">
-                            <p>EDIT</p>
-                        </div>
-                        <div class = "delete-space">
-                            <p>DELETE</p>
-                        </div>
-                    </div>
-                    <div class = "product">
-                        <div class = "name-space">
-                            <p>NAME</p>
-                        </div>
-                        <div class = "department-space">
-                            <p>DEPARTMENT</p>
-                        </div>
-                        <div class = "price-space">
-                            <p>PRICE</p>
-                        </div>
-                        <div class = "quantity-space">
-                            <p>QUANTITY</p>
-                        </div>
-                        <div class = "origin-space">
-                            <p>ORIGIN</p>
-                        </div>
-                        <div class = "edit-space">
-                            <p>EDIT</p>
-                        </div>
-                        <div class = "delete-space">
-                            <p>DELETE</p>
-                        </div>
-                    </div>
-                    <div class = "product">
-                        <div class = "name-space">
-                            <p>NAME</p>
-                        </div>
-                        <div class = "department-space">
-                            <p>DEPARTMENT</p>
-                        </div>
-                        <div class = "price-space">
-                            <p>PRICE</p>
-                        </div>
-                        <div class = "quantity-space">
-                            <p>QUANTITY</p>
-                        </div>
-                        <div class = "origin-space">
-                            <p>ORIGIN</p>
-                        </div>
-                        <div class = "edit-space">
-                            <p>EDIT</p>
-                        </div>
-                        <div class = "delete-space">
-                            <p>DELETE</p>
-                        </div>
-                    </div>
-                        <div class = "product">
-                            <div class = "name-space">
-                                <p>NAME</p>
-                            </div>
-                            <div class = "department-space">
-                                <p>DEPARTMENT</p>
-                            </div>
-                            <div class = "price-space">
-                                <p>PRICE</p>
-                            </div>
-                            <div class = "quantity-space">
-                                <p>QUANTITY</p>
-                            </div>
-                            <div class = "origin-space">
-                                <p>ORIGIN</p>
-                            </div>
-                            <div class = "edit-space">
-                                <p>EDIT</p>
-                            </div>
-                            <div class = "delete-space">
-                                <p>DELETE</p>
-                            </div>
-                        </div>
-                        <div class = "product">
-                            <div class = "name-space">
-                                <p>NAME</p>
-                            </div>
-                            <div class = "department-space">
-                                <p>DEPARTMENT</p>
-                            </div>
-                            <div class = "price-space">
-                                <p>PRICE</p>
-                            </div>
-                            <div class = "quantity-space">
-                                <p>QUANTITY</p>
-                            </div>
-                            <div class = "origin-space">
-                                <p>ORIGIN</p>
-                            </div>
-                            <div class = "edit-space">
-                                <p>EDIT</p>
-                            </div>
-                            <div class = "delete-space">
-                                <p>DELETE</p>
-                            </div>
-                        </div>
-                        <div class = "product">
-                            <div class = "name-space">
-                                <p>NAME</p>
-                            </div>
-                            <div class = "department-space">
-                                <p>DEPARTMENT</p>
-                            </div>
-                            <div class = "price-space">
-                                <p>PRICE</p>
-                            </div>
-                            <div class = "quantity-space">
-                                <p>QUANTITY</p>
-                            </div>
-                            <div class = "origin-space">
-                                <p>ORIGIN</p>
-                            </div>
-                            <div class = "edit-space">
-                                <p>EDIT</p>
-                            </div>
-                            <div class = "delete-space">
-                                <p>DELETE</p>
-                            </div>
-                        </div>
-                        <div class = "product">
-                            <div class = "name-space">
-                                <p>NAME</p>
-                            </div>
-                            <div class = "department-space">
-                                <p>DEPARTMENT</p>
-                            </div>
-                            <div class = "price-space">
-                                <p>PRICE</p>
-                            </div>
-                            <div class = "quantity-space">
-                                <p>QUANTITY</p>
-                            </div>
-                            <div class = "origin-space">
-                                <p>ORIGIN</p>
-                            </div>
-                            <div class = "edit-space">
-                                <p>EDIT</p>
-                            </div>
-                            <div class = "delete-space">
-                                <p>DELETE</p>
-                            </div>
-                        </div>
-                        <div class = "product">
-                            <div class = "name-space">
-                                <p>NAME</p>
-                            </div>
-                            <div class = "department-space">
-                                <p>DEPARTMENT</p>
-                            </div>
-                            <div class = "price-space">
-                                <p>PRICE</p>
-                            </div>
-                            <div class = "quantity-space">
-                                <p>QUANTITY</p>
-                            </div>
-                            <div class = "origin-space">
-                                <p>ORIGIN</p>
-                            </div>
-                            <div class = "edit-space">
-                                <p>EDIT</p>
-                            </div>
-                            <div class = "delete-space">
-                                <p>DELETE</p>
-                            </div>
-                        </div>
-                            <div class = "product">
-                                <div class = "name-space">
-                                    <p>NAME</p>
-                                </div>
-                                <div class = "department-space">
-                                    <p>DEPARTMENT</p>
-                                </div>
-                                <div class = "price-space">
-                                    <p>PRICE</p>
-                                </div>
-                                <div class = "quantity-space">
-                                    <p>QUANTITY</p>
-                                </div>
-                                <div class = "origin-space">
-                                    <p>ORIGIN</p>
-                                </div>
-                                <div class = "edit-space">
-                                    <p>EDIT</p>
-                                </div>
-                                <div class = "delete-space">
-                                    <p>DELETE</p>
-                                </div>
-                            </div>
-                            <div class = "product">
-                                <div class = "name-space">
-                                    <p>NAME</p>
-                                </div>
-                                <div class = "department-space">
-                                    <p>DEPARTMENT</p>
-                                </div>
-                                <div class = "price-space">
-                                    <p>PRICE</p>
-                                </div>
-                                <div class = "quantity-space">
-                                    <p>QUANTITY</p>
-                                </div>
-                                <div class = "origin-space">
-                                    <p>ORIGIN</p>
-                                </div>
-                                <div class = "edit-space">
-                                    <p>EDIT</p>
-                                </div>
-                                <div class = "delete-space">
-                                    <p>DELETE</p>
-                                </div>
-                            </div>
-                            <div class = "product">
-                                <div class = "name-space">
-                                    <p>NAME</p>
-                                </div>
-                                <div class = "department-space">
-                                    <p>DEPARTMENT</p>
-                                </div>
-                                <div class = "price-space">
-                                    <p>PRICE</p>
-                                </div>
-                                <div class = "quantity-space">
-                                    <p>QUANTITY</p>
-                                </div>
-                                <div class = "origin-space">
-                                    <p>ORIGIN</p>
-                                </div>
-                                <div class = "edit-space">
-                                    <p>EDIT</p>
-                                </div>
-                                <div class = "delete-space">
-                                    <p>DELETE</p>
-                                </div>
-                            </div>
-                            <div class = "product">
-                                <div class = "name-space">
-                                    <p>NAME</p>
-                                </div>
-                                <div class = "department-space">
-                                    <p>DEPARTMENT</p>
-                                </div>
-                                <div class = "price-space">
-                                    <p>PRICE</p>
-                                </div>
-                                <div class = "quantity-space">
-                                    <p>QUANTITY</p>
-                                </div>
-                                <div class = "origin-space">
-                                    <p>ORIGIN</p>
-                                </div>
-                                <div class = "edit-space">
-                                    <p>EDIT</p>
-                                </div>
-                                <div class = "delete-space">
-                                    <p>DELETE</p>
-                                </div>
-                            </div>
-                            <div class = "product">
-                                <div class = "name-space">
-                                    <p>NAME</p>
-                                </div>
-                                <div class = "department-space">
-                                    <p>DEPARTMENT</p>
-                                </div>
-                                <div class = "price-space">
-                                    <p>PRICE</p>
-                                </div>
-                                <div class = "quantity-space">
-                                    <p>QUANTITY</p>
-                                </div>
-                                <div class = "origin-space">
-                                    <p>ORIGIN</p>
-                                </div>
-                                <div class = "edit-space">
-                                    <p>EDIT</p>
-                                </div>
-                                <div class = "delete-space">
-                                    <p>DELETE</p>
-                                </div>
-                            </div>
-                            <div class = "product">
-                                <div class = "name-space">
-                                    <p>NAME</p>
-                                </div>
-                                <div class = "department-space">
-                                    <p>DEPARTMENT</p>
-                                </div>
-                                <div class = "price-space">
-                                    <p>PRICE</p>
-                                </div>
-                                <div class = "quantity-space">
-                                    <p>QUANTITY</p>
-                                </div>
-                                <div class = "origin-space">
-                                    <p>ORIGIN</p>
-                                </div>
-                                <div class = "edit-space">
-                                    <p>EDIT</p>
-                                </div>
-                                <div class = "delete-space">
-                                    <p>DELETE</p>
-                                </div>
-                            </div>
-                            <div class = "product">
-                                <div class = "name-space">
-                                    <p>NAME</p>
-                                </div>
-                                <div class = "department-space">
-                                    <p>DEPARTMENT</p>
-                                </div>
-                                <div class = "price-space">
-                                    <p>PRICE</p>
-                                </div>
-                                <div class = "quantity-space">
-                                    <p>QUANTITY</p>
-                                </div>
-                                <div class = "origin-space">
-                                    <p>ORIGIN</p>
-                                </div>
-                                <div class = "edit-space">
-                                    <p>EDIT</p>
-                                </div>
-                                <div class = "delete-space">
-                                    <p>DELETE</p>
-                                </div>
-                            </div>
-                                <div class = "product">
-                                    <div class = "name-space">
-                                        <p>NAME</p>
-                                    </div>
-                                    <div class = "department-space">
-                                        <p>DEPARTMENT</p>
-                                    </div>
-                                    <div class = "price-space">
-                                        <p>PRICE</p>
-                                    </div>
-                                    <div class = "quantity-space">
-                                        <p>QUANTITY</p>
-                                    </div>
-                                    <div class = "origin-space">
-                                        <p>ORIGIN</p>
-                                    </div>
-                                    <div class = "edit-space">
-                                        <p>EDIT</p>
-                                    </div>
-                                    <div class = "delete-space">
-                                        <p>DELETE</p>
-                                    </div>
-                                </div>
-                                <div class = "product">
-                                    <div class = "name-space">
-                                        <p>NAME</p>
-                                    </div>
-                                    <div class = "department-space">
-                                        <p>DEPARTMENT</p>
-                                    </div>
-                                    <div class = "price-space">
-                                        <p>PRICE</p>
-                                    </div>
-                                    <div class = "quantity-space">
-                                        <p>QUANTITY</p>
-                                    </div>
-                                    <div class = "origin-space">
-                                        <p>ORIGIN</p>
-                                    </div>
-                                    <div class = "edit-space">
-                                        <p>EDIT</p>
-                                    </div>
-                                    <div class = "delete-space">
-                                        <p>DELETE</p>
-                                    </div>
-                                </div>
-                                <div class = "product">
-                                    <div class = "name-space">
-                                        <p>NAME</p>
-                                    </div>
-                                    <div class = "department-space">
-                                        <p>DEPARTMENT</p>
-                                    </div>
-                                    <div class = "price-space">
-                                        <p>PRICE</p>
-                                    </div>
-                                    <div class = "quantity-space">
-                                        <p>QUANTITY</p>
-                                    </div>
-                                    <div class = "origin-space">
-                                        <p>ORIGIN</p>
-                                    </div>
-                                    <div class = "edit-space">
-                                        <p>EDIT</p>
-                                    </div>
-                                    <div class = "delete-space">
-                                        <p>DELETE</p>
-                                    </div>
-                                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="ailes">
+                <p>Fruits and Vegetables</p>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="ailes">
+                <p>Bakery</p>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="ailes">
+                <p>Pantry</p>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="ailes">
+                <p>Dairy</p>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="ailes">
+                <p>Cleaning Supplies</p>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="brand-container">
+                    <p>BRAND</p>
+                </div>
+                <div class="name-container">
+                    <p>NAME</p>
+                </div>
+                <div class="department-container">
+                    <p>DEPARTMENT</p>
+                </div>
+                <div class="price-container">
+                    <p>PRICE</p>
+                </div>
+                <div class="small-container">
+                    <p>QTY</p>
+                </div>
+                <div class="origin-container">
+                    <p>ORIGIN</p>
+                </div>
+                <div class="small-container">
+                    <p>EDIT</p>
+                </div>
+                <div class="small-container">
+                    <p>DELETE</p>
+                </div>
             </div>
         </div>
-    </body>
+    </div>
+    <footer>
+        <button type="button">Add product</button> 
+    </footer>
+    </div>
+</body>
 </html>
