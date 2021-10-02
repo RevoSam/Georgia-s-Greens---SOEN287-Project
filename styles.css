@@ -11,6 +11,12 @@ height/width.*/
 html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
 
 [class*="col-"] {
   float: left;
@@ -48,6 +54,7 @@ html {
 }
 
 .header {
+  display: block;
   border: 1px solid black;
   background-color: rgb(33, 105, 0);
   width: 100%;
@@ -161,12 +168,14 @@ img {
 }
 
 .footer {
+  display: block;
   border: 1px solid black;
   background-color: rgb(33, 105, 0);
   text-align: center;
   color: #f1f1f1;
   width: 100%;
-  position: absolute;
+  height: 30%;
+  bottom: 0;
 }
 
 .footer a {
@@ -352,4 +361,94 @@ img {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: auto;
+}
+
+.item_wrapper {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item_details {
+  width: 50%;
+  padding-left: 1%;
+  background-color: rgb(247, 247, 247);
+}
+.item_wrapper img {
+  height: auto;
+  max-width: 50%;
+}
+
+.item_wrapper hr {
+  border-color: rgb(240, 240, 240);
+  border-style: solid;
+  margin-right: 1%;
+}
+.product_description {
+  display: block;
+}
+
+.brand {
+  font-family: sans-serif;
+  color: rgb(125, 125, 125);
+  font-size: 2vw;
+}
+.item_description {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: block;
+  font-size: 3vw;
+}
+.item_price {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: block;
+  text-shadow: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 3vw;
+}
+.item_price_insight {
+  display: block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 2.5%;
+  font-size: 1.25vw;
+  color: rgb(125, 125, 125);
+  font-weight: lighter;
+}
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  padding: 15px;
+  width: 35%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  transition: all 0.2s;
+  font-family: sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+.button:hover {
+  color: rgb(255, 225, 225);
+  background-color: rgb(33, 105, 0);
+}
+.item_number {
+  display: block;
+  margin-bottom: 0;
+}
+.product_description {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5vw;
+}
+.item_number {
+  position: absolute;
+  color: rgb(125, 125, 125);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+  bottom: 0;
 }
