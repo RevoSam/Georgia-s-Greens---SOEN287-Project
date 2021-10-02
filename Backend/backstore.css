@@ -100,13 +100,7 @@ aside a:hover {
     height:40px;
 }
 
-.price-container {
-    float:left;
-    width:10%;
-    height:40px;
-}
-
-.origin-container {
+.price-container, .origin-container {
     float:left;
     width:10%;
     height:40px;
@@ -191,23 +185,7 @@ button {
             margin:1%;
         }
 
-        .name-container {
-            width:100%;
-        }
-        
-        .department-container {
-            width:100%;
-        }
-
-        .price-container {
-            width:100%;
-        }
-
-        .origin-container {
-            width:100%;
-        }
-
-        .small-container{
+        .name-container,.brand-container,.department-container,.price-container,.origin-container,.small-container {
             width:100%;
         }
 
@@ -247,29 +225,11 @@ button {
             margin:1%;
         }
 
-        .brand-container {
-            width:100%;
-        }
         
-        .name-container {
+        .name-container,.brand-container,.department-container,.price-container,.origin-container, .small-container{
             width:100%;
         }
-        
-        .department-container {
-            width:100%;
-        }
-       
-        .price-container {
-            width:100%;
-        }
-        
-        .origin-container {
-            width:100%;
-        } 
-        
-        .small-container{
-           width:100%; 
-        }
+
 
         .inventory-table {
             width:99%;
