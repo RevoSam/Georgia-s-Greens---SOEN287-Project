@@ -2,6 +2,7 @@ html {
     background-color:rgb(189, 221, 206) ;
 }
 
+/*Side Bar*/
 .sidebar {
     position:fixed;
     height:100%;
@@ -9,6 +10,7 @@ html {
     background-color: cadetblue;
 }
 
+/*Right side of program*/
 .right-side {
     position:relative;
     float:right;
@@ -17,89 +19,45 @@ html {
     background-color:rgb(189, 221, 206) ;
 }
 
-/*For rows containing 4 divs*/
-.sml-container{
-    width:25%;
-    float:left;
-    text-align:center;
-    padding:30px;
-}
-
-.sml-container input {
-    width:100%;
-    padding:5px;
-}
-
-.sml-container select{
-    width:100%;
-    padding:6.7px;
-}
-
-.ssml-container{
-    width:30%;
-    float:left;
-    text-align:center;
-    padding:30px;
-}
-.ssml-container input{
-    width:100%;
-    padding:5px;
-}
-
-.xsml-container {
-
+/*Division of the space by 20%*/
+.xxsml-container {
     width:20%;
     float:left;
     text-align:center;
     padding:30px;
 }
 
-.xsml-container input {
-    padding:5px;
-    width:100%;
-}
-
-table {
-    margin-left:auto;
-    margin-right:auto;
-    width:80%;
-    margin-top:3%;
-}
-
-
-
-/*For rows containing 3 divs*/
-.med-container{
-    width:33.33%;
-    float:left;
-    text-align:center;
-    height:100px;
-}
-
-/*For rows containing 1 element of 40% and 1 element of 60% divs*/
-.xmed-container{
-    width:40%;
+/*Division of the space by 25%*/
+.xsml-container{
+    width:25%;
     float:left;
     text-align:center;
     padding:30px;
-    margin-left:0;
 }
 
-/*For rows with a xmed-container*/
+
+.xsml-container select{
+    width:100%;
+    padding:6.7px;
+}
+
+/*Division of the space by 30%*/
+.sml-container{
+    width:30%;
+    float:left;
+    text-align:center;
+    padding:30px;
+}
+
+/*Division of the space by 50%*/
 .large-container{
     float:left;
     width:50%;
     text-align:center;
     padding:30px;
-
 }
 
-.large-container input{
-    width:100%;
-    padding:5px;
-}
-
-/*For rows with a single div element*/
+/*Division of the space by 100%*/
 .xlarge-container{
     width:100%;
     float:left;
@@ -116,6 +74,18 @@ table {
 .xlarge-container textarea {
     resize:none;
     width:100%;
+}
+
+input{
+    width:100%;
+    padding:5px;
+}
+
+table {
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+    margin-top:3%;
 }
 
 #isDiscount {
@@ -173,6 +143,8 @@ button {
     margin-right:30px;
 }
 
+/*End of normal screen*/
+
 
 /*for xlarge screens*/
   @media (min-width: 1060px) and (max-width: 1400px) {
@@ -225,18 +197,19 @@ button {
     .sml-container select{
         padding:6.7px;
     }
-    .ssml-container{
+
+    .xsml-container{
         width:50%;
         float:left;
         text-align:center;
         padding:30px;
     }
-    .ssml-container input{
+    .xsml-container input{
         width:100%;
         padding:5px;
     }
     
-    .xsml-container {
+    .xxsml-container {
     
         width:50%;
         float:left;
@@ -244,15 +217,12 @@ button {
         padding:30px;
     }
     
-    .xsml-container input {
+    .xxsml-container input {
         padding:5px;
         width:100%;
     }
     #isDiscount {
         padding:6.7px;
-    }
-    .med-container{
-        width:50%;
     }
 
     .right-side {
@@ -281,18 +251,16 @@ button {
     .sidebar {
         display:none;
     }
+    .xxsml-container{
+        width:100%;
+    }
+    .xsml-container{
+        width:100%;
+    }
     .sml-container{
         width:100%;
     }
 
-    .med-container{
-        width:100%;
-    }
-    
-    .xmed-container{
-        width:100%;
-    }
-    
     .large-container{
         width:100%;
     }
@@ -308,28 +276,5 @@ button {
 
     button {
         width:25%;
-    }
-    .ssml-container{
-        width:100%;
-        float:left;
-        text-align:center;
-        padding:30px;
-    }
-    .ssml-container input{
-        width:100%;
-        padding:5px;
-    }
-    
-    .xsml-container {
-    
-        width:100%;
-        float:left;
-        text-align:center;
-        padding:30px;
-    }
-    
-    .xsml-container input {
-        padding:5px;
-        width:100%;
     }
   }
