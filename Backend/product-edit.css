@@ -20,7 +20,7 @@ html {
 }
 
 /*Division of the space by 20%*/
-.xxsml-container {
+.xsml-container {
     width:20%;
     float:left;
     text-align:center;
@@ -28,7 +28,7 @@ html {
 }
 
 /*Division of the space by 25%*/
-.xsml-container{
+.sml-container{
     width:25%;
     float:left;
     text-align:center;
@@ -36,13 +36,13 @@ html {
 }
 
 
-.xsml-container select{
+.sml-container select{
     width:100%;
     padding:6.7px;
 }
 
 /*Division of the space by 30%*/
-.sml-container{
+.med-container{
     width:30%;
     float:left;
     text-align:center;
@@ -190,26 +190,26 @@ button {
         padding:30px;
     }
 
-    .sml-container{
+    .med-container{
         width:50%;
     }
 
-    .sml-container select{
+    .med-container select{
         padding:6.7px;
     }
 
-    .xsml-container{
+    .sml-container{
         width:50%;
         float:left;
         text-align:center;
         padding:30px;
     }
-    .xsml-container input{
+    .sml-container input{
         width:100%;
         padding:5px;
     }
     
-    .xxsml-container {
+    .xsml-container {
     
         width:50%;
         float:left;
@@ -217,7 +217,7 @@ button {
         padding:30px;
     }
     
-    .xxsml-container input {
+    .xsml-container input {
         padding:5px;
         width:100%;
     }
@@ -251,13 +251,13 @@ button {
     .sidebar {
         display:none;
     }
-    .xxsml-container{
-        width:100%;
-    }
     .xsml-container{
         width:100%;
     }
     .sml-container{
+        width:100%;
+    }
+    .med-container{
         width:100%;
     }
 
