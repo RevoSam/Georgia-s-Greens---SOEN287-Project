@@ -198,6 +198,7 @@ img {
   margin-left: auto;
   border: 1px solid black;
 }
+
 .ailes_wrapper {
   background-color: rgb(247, 247, 247);
   display: flex;
@@ -227,15 +228,16 @@ img {
 
 .ailes_block ul {
   list-style-type: none;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
+  gap: 5px;
   padding: 0;
   margin: 0;
 }
 
 .ailes_block ul li {
   list-style: none;
-  flex: 33.33%;
+  flex: 100%;
 }
 
 .aile {
@@ -258,5 +260,96 @@ img {
   font-size: 2.5vw;
 
   text-align: center;
+  width: auto;
+}
+/* Products*/
+.products_wrapper {
+  background-color: rgb(247, 247, 247);
+  display: inline-flex;
+  flex-direction: column;
+}
+.products_wrapper h1 {
+  color: black;
+  box-sizing: border-box;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  width: auto;
+}
+
+.products_wrapper h2 {
+  color: black;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  width: auto;
+}
+
+.products_block {
+  width: 100%;
+  padding: 2.5%;
+}
+
+.products_block ul {
+  list-style-type: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 2.5%;
+  padding: 0;
+  margin: 0;
+}
+
+.products_block ul li {
+  list-style: none;
+  flex: 40%;
+  margin-top: 5%;
+}
+
+.products_block ul li a {
+  text-decoration: none;
+}
+
+.products_block ul li a:link,
+.products_block ul li a:visited {
+  color: rgb(0, 0, 0);
+}
+.product {
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid rgb(240, 240, 240);
+  overflow: hidden;
+}
+.products_block img {
+  width: 100%;
+  height: auto;
+  max-height: 12em;
+  object-fit: contain;
+  object-position: center;
+  vertical-align: middle;
+}
+
+.product h3,
+.product h4 {
+  text-align: center;
+  color: black;
+  box-sizing: border-box;
+  font-size: 2.5vw;
+  text-align: center;
+  width: auto;
+  margin: 1%;
+}
+
+.product h4 {
+  font-size: 1.5vw;
+}
+
+.product span {
+  display: block;
+  font-size: 2.5vw;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: auto;
 }
