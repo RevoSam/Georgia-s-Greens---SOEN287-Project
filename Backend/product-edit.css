@@ -168,59 +168,23 @@ button {
   }
 
   /*for medium screens*/
-  @media (min-width: 500px) and (max-width: 749px) {
+  @media (min-width: 600px) and (max-width: 749px) {
 
-    #name {
+    #name,#brand,#short-description  {
         width:100%;
         float:left;
         text-align:center;
         padding:30px;
-    }
-
-    #brand {
-        width:100%;
-        float:left;
-        text-align:center;
-        padding:30px;
-    }
-    #short-description{
-        width:100%;
-        float:left;
-        text-align:center;
-        padding:30px;
-    }
-
-    .med-container{
-        width:50%;
     }
 
     .med-container select{
         padding:6.7px;
     }
 
-    .sml-container{
+    .xsml-container, .sml-container,.med-container  {
         width:50%;
-        float:left;
-        text-align:center;
-        padding:30px;
-    }
-    .sml-container input{
-        width:100%;
-        padding:5px;
     }
     
-    .xsml-container {
-    
-        width:50%;
-        float:left;
-        text-align:center;
-        padding:30px;
-    }
-    
-    .xsml-container input {
-        padding:5px;
-        width:100%;
-    }
     #isDiscount {
         padding:6.7px;
     }
@@ -243,7 +207,7 @@ button {
   }
 
   /*for small screens*/
-  @media (max-width: 499px)
+  @media (max-width: 599px)
   {
     .right-side {
         width:100%;
@@ -251,21 +215,7 @@ button {
     .sidebar {
         display:none;
     }
-    .xsml-container{
-        width:100%;
-    }
-    .sml-container{
-        width:100%;
-    }
-    .med-container{
-        width:100%;
-    }
-
-    .large-container{
-        width:100%;
-    }
-
-    .xlarge-container{
+    .xsml-container,.sml-container,.med-container,.large-container,.xlarge-container {
         width:100%;
     }
 
