@@ -5,7 +5,7 @@ html {
 .sidebar {
     position:fixed;
     height:100%;
-    width:40%;
+    width:30%;
     background-color: cadetblue;
 }
 
@@ -13,7 +13,7 @@ html {
     position:relative;
     float:right;
     margin-top:30px;
-    width:60%;
+    width:70%;
     background-color:rgb(189, 221, 206) ;
 }
 
@@ -25,6 +25,40 @@ html {
     padding:30px;
 }
 
+.sml-container input {
+    width:100%;
+    padding:5px;
+}
+
+.sml-container select{
+    width:100%;
+    padding:6.7px;
+}
+
+.ssml-container{
+    width:30%;
+    float:left;
+    text-align:center;
+    padding:30px;
+}
+.ssml-container input{
+    width:100%;
+    padding:5px;
+}
+
+.xsml-container {
+
+    width:20%;
+    float:left;
+    text-align:center;
+    padding:30px;
+}
+
+.xsml-container input {
+    padding:5px;
+    width:100%;
+}
+
 table {
     margin-left:auto;
     margin-right:auto;
@@ -32,10 +66,7 @@ table {
     margin-top:3%;
 }
 
-.sml-container select{
-    width:100%;
-    padding:6.7px;
-}
+
 
 /*For rows containing 3 divs*/
 .med-container{
@@ -54,19 +85,18 @@ table {
     margin-left:0;
 }
 
-.col-2 input {
-    width:90%;
-}
-
 /*For rows with a xmed-container*/
 .large-container{
+    float:left;
     width:50%;
-    float:right;
     text-align:center;
     padding:30px;
+
 }
-.col-7 input{
-    width:95%;
+
+.large-container input{
+    width:100%;
+    padding:5px;
 }
 
 /*For rows with a single div element*/
@@ -76,13 +106,20 @@ table {
     text-align:center;
     padding:30px;
 }
+.xlarge-container input{
+    width:100%;
+    float:left;
+    text-align:center;
+    padding:30px;
+}
 
-.col-12 input {
+.xlarge-container textarea {
+    resize:none;
     width:100%;
 }
 
-.date input{
-    text-align: center;
+#isDiscount {
+    padding:6.5px;
 }
 
 /*Header containing the picture*/
@@ -93,6 +130,7 @@ table {
 /*product discount deadline*/
 #product-discount-deadline {
     text-align:center;
+    width:100%;
 }
 
 /*circle to put the product picture*/
@@ -135,13 +173,14 @@ button {
     margin-right:30px;
 }
 
+
 /*for xlarge screens*/
-  @media (min-width: 1060px) and (max-width: 1300px) {
+  @media (min-width: 1060px) and (max-width: 1400px) {
     .right-side {
-        width:70%;
+        width:80%;
     }
     .sidebar {
-        width:30%;
+        width:20%;
     }
   }
   
@@ -184,9 +223,34 @@ button {
     }
 
     .sml-container select{
-        padding:6.8px;
+        padding:6.7px;
+    }
+    .ssml-container{
+        width:50%;
+        float:left;
+        text-align:center;
+        padding:30px;
+    }
+    .ssml-container input{
+        width:100%;
+        padding:5px;
     }
     
+    .xsml-container {
+    
+        width:50%;
+        float:left;
+        text-align:center;
+        padding:30px;
+    }
+    
+    .xsml-container input {
+        padding:5px;
+        width:100%;
+    }
+    #isDiscount {
+        padding:6.7px;
+    }
     .med-container{
         width:50%;
     }
@@ -239,9 +303,33 @@ button {
 
     .button-container {
         width:95%;
+        margin-bottom:20px;
     }
 
     button {
         width:25%;
+    }
+    .ssml-container{
+        width:100%;
+        float:left;
+        text-align:center;
+        padding:30px;
+    }
+    .ssml-container input{
+        width:100%;
+        padding:5px;
+    }
+    
+    .xsml-container {
+    
+        width:100%;
+        float:left;
+        text-align:center;
+        padding:30px;
+    }
+    
+    .xsml-container input {
+        padding:5px;
+        width:100%;
     }
   }
