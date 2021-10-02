@@ -37,7 +37,7 @@ html {
     width: 100%;
   }
   .body {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -104,7 +104,7 @@ img {
     display: block;
     text-align: center;
     width: 100%;
-    margin: 0;
+    margin: 0px;
     padding: 8px;
   }
 
@@ -118,20 +118,12 @@ img {
     border: 1px solid rgb(0, 88, 59);
   }
 
-  .dropdown {
+  .menu .dropdown {
+    float: none;
     display: block;
     width: 100%;
     margin: 0;
-    border: 1px solid black;
   }
-  .dropdown #firstLink {
-    width: 100%;
-  }
-
-  .dropdown-content .dropdown-menu {
-    width: 100%;
-  }
-
   .body {
     width: 100%;
   }
@@ -145,22 +137,27 @@ img {
 
 .dropdown:hover .dropdown-content {
   display: block;
+  border: 1px solid black;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
+  transition: all 0.5s ease;
   background-color: #f1f1f1;
-  min-width: 50%;
+  margin-top: 2.25rem;
+  min-width: 100%;
   z-index: 1;
 }
 
 .dropdown-content .dropdown-menu {
   width: 100%;
+  clear: both;
   color: black;
   padding: 8px;
   text-decoration: none;
   display: block;
+  transition-duration: 0.5s;
 }
 
 .footer {
