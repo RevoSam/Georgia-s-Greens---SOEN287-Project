@@ -452,3 +452,13 @@ img {
   font-size: 1vw;
   bottom: 0;
 }
+
+.login-page {
+  width: 80%;
+  margin: 40px auto auto auto;
+}
+
+.login-page h2{
+  font-family: sans-serif;
+  color: rgb(121, 173, 135);
+}
