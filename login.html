@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="..\..\styles.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>User Login</title>
   </head>
   <body>
-    <div class="header"><a href="..\..\index.html"><img src = "..\..\assets/GGLogo.png" width="350"></a></div>
+    <div class="header"><a href="index.html"><img src = "assets/GGLogo.png" width="350"></a></div>
     <div class="blank"></div>
     <div class="row">
       <div class="col-4 menu">
@@ -17,32 +17,26 @@
           <div class="dropdown-content">
             <a class="dropdown-menu" href="#">Meat</a>
             <a class="dropdown-menu" href="#">Fruits & Vegetables</a>
-            <a class="dropdown-menu" href="#">Bakery</a>
+            <a class="dropdown-menu" href="Ailes/Bakery/Bakery.html">Bakery</a>
             <a class="dropdown-menu" href="#">Pantry</a>
             <a class="dropdown-menu" href="#">Dairy</a>
-            <a class="dropdown-menu" href="CleaningSupplies.html">Cleaning Supplies</a>
+            <a class="dropdown-menu" href="Ailes/CleaningSupplies/CleaningSupplies.html">Cleaning Supplies</a>
           </div>
         </div>
-        <a class="nav">Sign in</a>
+        <a class="nav" href="login.html">Sign in</a>
         <a class="nav">Check out</a>
         <input type="text" placeholder="Search for a product..." />
       </div>
     </div>
-    <div class="body">
-      <div class="item_wrapper">
-        <img src="..\..\assets/Cleaning Aisle Products/Paper Towel.png">
-        <div class="item_details">
-        <h2 class="brand">Georgia's Greens</h2>
-        <span class="item_description">Strong Paper Towel (2/pkg)</span>
-        <span class="item_price">$3.49</span>
-        <span class="item_price_insight">$1.745 / ea</span>
-        <a href="" class="button">Add to Cart</a>
-        <hr>
-        <h2 class="brand description">Product Description</h2>
-        <p class="product_description">Ultra Strong Paper Towel, 60 sheets each roll (27.4 x 22.0 cm)</p>
-        <span class="item_number">Product Number: GGCP225_PK</span>
-      </div>
-      </div>
+    <div class="login-page">
+      <form class="login" action="" method="post">
+        <h2><label for="email">Enter your email:</label></h2>
+        <input type="text" name="email" placeholder="example@gmail.com" value="">
+        <h2><label for="pass">Enter your password:</label></h2>
+        <input type="password" name="pass" value=""><br>
+        <a class="forgot-pass" href="#">Forgot your password?</a>
+        <input class="login-submit" type="submit" name="Login" value="Log in">
+      </form>
     </div>
     <div class="footer">
       <div id="link-list-left">
@@ -71,10 +65,10 @@
 
       <div id="contact-info">
         <p><strong>OUR SOCIALS</strong></p><br>
-        <a href="#" style="padding: 5px;"><img src = "..\..\assets/FBLogo.png"></a>
-        <a href="#" style="padding: 5px;"><img src = "..\..\assets/TwitterLogo.png"></a>
-        <a href="#" style="padding: 5px;"><img src = "..\..\assets/InstaLogo.png"></a>
-        <a href="https://youtu.be/dQw4w9WgXcQ" style="padding: 5px;" target="_blank"><img src = "..\..\assets/YTLogo.png"></a>
+        <a href="#" style="padding: 5px;"><img src = "assets/FBLogo.png"></a>
+        <a href="#" style="padding: 5px;"><img src = "assets/TwitterLogo.png"></a>
+        <a href="#" style="padding: 5px;"><img src = "assets/InstaLogo.png"></a>
+        <a href="https://youtu.be/dQw4w9WgXcQ" style="padding: 5px;" target="_blank"><img src = "assets/YTLogo.png"></a>
       </div>
   </div>
   </body>
