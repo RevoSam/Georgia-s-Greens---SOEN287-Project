@@ -455,10 +455,16 @@ img {
 
 .login-page {
   width: 80%;
-  margin: 40px auto auto auto;
+  margin: 40px auto 40px auto;
 }
 
 .login-page h2{
   font-family: sans-serif;
   color: rgb(121, 173, 135);
+}
+
+.forgot-pass{
+  border-style: none;
+  color: rgb(121, 173, 135);
+  background-color: white;
 }
