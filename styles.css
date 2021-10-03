@@ -16,6 +16,8 @@ body {
   height: 100%;
   margin: 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 [class*="col-"] {
@@ -176,6 +178,7 @@ img {
   width: 100%;
   height: 30%;
   bottom: 0;
+  margin-top: auto;
 }
 
 .footer a {
@@ -464,7 +467,38 @@ img {
 }
 
 .forgot-pass{
-  border-style: none;
   color: rgb(121, 173, 135);
-  background-color: white;
+  text-decoration: none;
+}
+
+.nav {
+  color: black;
+}
+
+.nav a:hover {
+  background-color: rgb(33, 105, 0);
+  color: white;
+  cursor: pointer;
+}
+
+.login-submit{
+  display: block;
+  margin: 20px auto auto 0;
+  text-decoration: none;
+  padding: 15px;
+  width: 15%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  transition: all 0.2s;
+  font-family: sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.login-submit:hover{
+  color: rgb(255, 225, 225);
+  background-color: rgb(33, 105, 0);
+  cursor: pointer;
 }
