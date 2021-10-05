@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shopping Cart</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="ShoppingCart.css">
+</head>
+
+<body>
+    <div class="header"><a href="index.html"><img src="../assets/GGLogo.png" width="350"></a></div>
+    <div class="blank"></div>
+    <div class="row">
+        <div class="col-4 menu">
+            <div class="dropdown">
+                <a id="firstLink" class="nav">Aisles</a>
+                <div class="dropdown-content">
+                    <a class="dropdown-menu" href="#">Meat</a>
+                    <a class="dropdown-menu" href="Ailes\FruitsVegetables\FruitsVegetables.html">Fruits & Vegetables</a>
+                    <a class="dropdown-menu" href="#">Bakery</a>
+                    <a class="dropdown-menu" href="#">Pantry</a>
+                    <a class="dropdown-menu" href="#">Dairy</a>
+                    <a class="dropdown-menu" href="Ailes/CleaningSupplies/CleaningSupplies.html">Cleaning Supplies</a>
+                </div>
+            </div>
+            <a class="nav">Sign in</a>
+            <a class="nav">Check out</a>
+            <input type="text" placeholder="Search for a product..." />
+        </div>
+    </div>
+    <h1>My Shopping Cart</h1>
+    <table class="cart-container">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Products</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td><img src="../assets/Fruits and Vegetable Products/Apple.png"></td>
+                <td>Apple</td>
+                <td><button class="quantity-button">+</button>1<button class="quantity-button">-</button></td>
+                <td>$1.22</td>
+            </tr>
+            <tr>
+                <td><img src="../assets/Fruits and Vegetable Products/Banana.png""></td>
+                <td>Banana</td>
+                <td><button class=" quantity-button">+</button>1<button class="quantity-button">-</button></td>
+                <td>$0.69</td>
+            </tr>
+            <tr>
+                <td><img src="../assets/Cleaning Aisle Products/Paper Towel.png""></td>
+                <td>Paper Towel</td>
+                <td><button class=" quantity-button">+</button>1<button class="quantity-button">-</button></td>
+                <td>$3.49</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>$5.40 <button id="checkout-button">Checkout</button></td>
+            </tr>
+        </thead>
+    </table>
+
+</body>
+
+</html>

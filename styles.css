@@ -353,3 +353,31 @@ img {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: auto;
 }
+
+
+th {
+  font-size: 200%;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+td {
+  font-size: 150%;
+  height: 80px;
+  width: 160px;
+  text-align: center;
+  vertical-align: middle;
+  
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid rgb(33, 105, 0);
+  border-radius: 10%;
+}
+
+.quantity {
+  padding-left: 10px;
+  padding-right: 10px;
+}

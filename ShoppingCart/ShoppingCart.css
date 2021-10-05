@@ -1,0 +1,53 @@
+.cart-container th {
+    font-size: 200%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  .cart-container td {
+    font-size: 150%;
+    height: 80px;
+    width: 160px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 10px;
+    
+  }
+
+  
+  .cart-container {
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid rgb(33, 105, 0);
+    background-color: #fffaf1;
+    border-radius: 10%;
+    padding: 30px 50px;
+  }
+  
+  .quantity-button {
+    padding: 1.5px 10px;
+    font-size: 20px;
+    margin: 20px 20px;
+    background: none;
+    border: 2px solid black;
+  }
+
+  .quantity-button:hover {
+    background-color: rgb(33, 105, 0);
+    color: white;
+    cursor: pointer;
+  }
+
+  #checkout-button {
+      margin: 20px;
+      padding: 10px;
+      background: none;
+      background: none;
+      border: 2px solid black;
+  }
+
+  #checkout-button:hover{
+    background-color: rgb(33, 105, 0);
+    color: white;
+    cursor: pointer;
+  }
