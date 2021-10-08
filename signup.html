@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Georgia's Greens</title>
+    <title>Sign up</title>
   </head>
   <body>
     <div class="header"><a href="index.html"><img src = "assets/GGLogo.png" width="350"></a></div>
@@ -28,56 +27,32 @@
         <input type="text" placeholder="Search for a product..." />
       </div>
     </div>
-    <div class="body">
-      <div class="ailes_wrapper">
-        <h2>Start Browsing</h2>
-        <h1>Browse our Aisles</h1>
-        <div class="ailes_block">
-          <ul>
-            <li>
-              <div class="aile">
-                <img src="assets/vegetables.jpg">
-                <h3>Vegetables and Fruits</h3>
-              </div>
-            </li>
-
-            <li>
-              <div class="aile">
-                <img src="assets/Meat.jpg">
-                <h3>Meat</h3>
-              </div>
-            </li>
-
-            <li>
-              <div class="aile">
-                <img src="assets/Bakery.jpg">
-                <h3>Bakery</h3>
-              </div>
-            </li>
-
-            <li>
-              <div class="aile">
-                <img src="assets/Pantry.jpg">
-                <h3>Pantry</h3>
-              </div>
-            </li>
-
-            <li>
-              <div class="aile">
-                <img src="assets/Dairy.jpg">
-                <h3>Dairy</h3>
-              </div>
-            </li>
-
-            <li>
-              <div class="aile">
-                <img src="assets/Cleaning.jpg">
-                <h3>Cleaning Supplies</h3>
-              </div>
-            </li>
-          </ul>
-        </div>
+    <div class="signup-page">
+      <div class="contact-details">
+        <h1>Contact Details</h1>
+        <hr>
+        <h3><label for="email">Full Name:</label></h2>
+        <input type="text" name="fullname" placeholder="" value="">
+        <h3><label for="email">Enter your email:</label></h2>
+        <input type="text" name="email" placeholder="example@gmail.com" value="">
+        <h3><label for="confirm-email">Confirm your email:</label></h3>
+        <input type="text" name="email-confirm" placeholder="" value="">
+        <h3><label for="pass">Enter your password:</label></h2>
+        <input type="password" name="pass" value=""><br>
+        <h3><label for="pass">Confirm your password:</label></h2>
+        <input type="password" name="pass-confirm" value=""><br>
       </div>
+      <div class="address-details">
+        <h1>Address</h1>
+        <hr>
+        <h3><label for="postal">Postal Code:</label></h2>
+        <input type="text" name="postal-code" placeholder="" value="">
+        <h3><label for="address">Address:</label></h2>
+        <input type="text" name="address" placeholder="" value="">
+        <h3><label for="address">City</label></h2>
+        <input type="text" name="city" placeholder="" value="">
+      </div>
+      <input class="Login-submit" type="submit" name="Sign up" value="Sign Up">
     </div>
     <div class="footer">
       <div id="link-list-left">

@@ -502,3 +502,27 @@ img {
   background-color: rgb(33, 105, 0);
   cursor: pointer;
 }
+
+.signup-page{
+  width: 80%;
+  margin: 40px auto 40px auto;
+}
+
+.signup-page h2{
+  font-family: sans-serif;
+  color: rgb(121, 173, 135);
+}
+
+.signup-page h3{
+  font-family: sans-serif;
+  color: rgb(121, 173, 135);
+}
+
+.signup-page h1{
+  font-family: sans-serif;
+  color: rgb(33, 105, 0);
+}
+
+input textarea{
+  width: 20%;
+}
