@@ -1,91 +1,94 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Sign up</title>
-  </head>
-  <body>
-    <div class="header"><a href="index.html"><img src = "assets/GGLogo.png" width="350"></a></div>
-    <div class="blank"></div>
-    <div class="row">
-      <div class="col-4 menu">
-        <div class="dropdown">
-          <a id="firstLink" class="nav">Aisles</a>
-          <div class="dropdown-content">
-            <a class="dropdown-menu" href="Ailes/Meat/Meat.html">Meat</a>
-            <a class="dropdown-menu" href="#">Fruits & Vegetables</a>
-            <a class="dropdown-menu" href="Ailes/Bakery/Bakery.html">Bakery</a>
-            <a class="dropdown-menu" href="#">Pantry</a>
-            <a class="dropdown-menu" href="#">Dairy</a>
-            <a class="dropdown-menu" href="Ailes/CleaningSupplies/CleaningSupplies.html">Cleaning Supplies</a>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Sign up</title>
+</head>
+
+<body>
+  <div class="header"><a href="index.html"><img src="assets/GGLogo.png" width="350"></a></div>
+  <div class="blank"></div>
+  <div class="row">
+    <div class="col-4 menu">
+      <div class="dropdown">
+        <a id="firstLink" class="nav">Aisles</a>
+        <div class="dropdown-content">
+          <a class="dropdown-menu" href="Ailes/Meat/Meat.html">Meat</a>
+          <a class="dropdown-menu" href="#">Fruits & Vegetables</a>
+          <a class="dropdown-menu" href="Ailes/Bakery/Bakery.html">Bakery</a>
+          <a class="dropdown-menu" href="#">Pantry</a>
+          <a class="dropdown-menu" href="#">Dairy</a>
+          <a class="dropdown-menu" href="Ailes/CleaningSupplies/CleaningSupplies.html">Cleaning Supplies</a>
         </div>
-        <a class="nav" href="login.html">Sign in</a>
-        <a class="nav">Check out</a>
-        <input type="text" placeholder="Search for a product..." />
       </div>
+      <a class="nav" href="login.html">Sign in</a>
+      <a class="nav">Check out</a>
+      <input type="text" placeholder="Search for a product..." />
     </div>
-    <div class="signup-page">
-      <div class="contact-details">
-        <h1>Contact Details</h1>
-        <hr>
-        <h3><label for="email">Full Name:</label></h2>
-        <input type="text" name="fullname" placeholder="" value="">
-        <h3><label for="email">Enter your email:</label></h2>
-        <input type="text" name="email" placeholder="example@gmail.com" value="">
-        <h3><label for="confirm-email">Confirm your email:</label></h3>
-        <input type="text" name="email-confirm" placeholder="" value="">
-        <h3><label for="pass">Enter your password:</label></h2>
-        <input type="password" name="pass" value=""><br>
-        <h3><label for="pass">Confirm your password:</label></h2>
-        <input type="password" name="pass-confirm" value=""><br>
-      </div>
-      <div class="address-details">
-        <h1>Address</h1>
-        <hr>
-        <h3><label for="postal">Postal Code</label></h2>
-        <input type="text" name="postal-code" placeholder="" value="">
-        <h3><label for="address">Address</label></h2>
-        <input type="text" name="address" placeholder="" value="">
-        <h3><label for="address">City</label></h2>
-        <input type="text" name="city" placeholder="" value="">
-      </div>
-      <input class="Login-submit" type="submit" name="Sign up" value="Sign Up">
-    </div>
-    <div class="footer">
-      <div id="link-list-left">
-        <p><strong>Useful Links</strong></p>
-        <a href="#">Page 1</a></a><br>
-        <a href="#">Page 2</a></a><br>
-        <a href="#">Page 3</a></a><br>
-        <a href="#">Page 4</a></a><br>
-        <a href="#">Page 5</a></a><br>
-        <a href="#">Page 6</a></a><br>
-        <a href="#">Page 7</a></a><br>
-        <a href="#">Page 8</a></a><br>
-      </div>
-
-      <div id="link-list-right">
-        <p><strong>Useful Links</strong></p>
-        <a href="#">Page X</a></a><br>
-        <a href="#">Page 2</a></a><br>
-        <a href="#">Page 3</a></a><br>
-        <a href="#">Page 4</a></a><br>
-        <a href="#">Page 5</a></a><br>
-        <a href="#">Page 6</a></a><br>
-        <a href="#">Page 7</a></a><br>
-        <a href="#">Page 8</a></a><br>
-      </div>
-
-      <div id="contact-info">
-        <p><strong>OUR SOCIALS</strong></p><br>
-        <a href="#" style="padding: 5px;"><img src = "assets/FBLogo.png"></a>
-        <a href="#" style="padding: 5px;"><img src = "assets/TwitterLogo.png"></a>
-        <a href="#" style="padding: 5px;"><img src = "assets/InstaLogo.png"></a>
-        <a href="https://youtu.be/dQw4w9WgXcQ" style="padding: 5px;" target="_blank"><img src = "assets/YTLogo.png"></a>
-      </div>
   </div>
-  </body>
+  <div class="signup-page">
+    <div class="contact-details">
+      <h1>Contact Details</h1>
+      <hr>
+      <h3><label for="name">Full Name:</label></h2>
+        <input type="text" id="name" name="fullname" placeholder="" value="">
+        <h3><label for="email">Enter your email:</label></h2>
+          <input type="text" id="email" name=" email" placeholder="example@gmail.com" value="">
+          <h3><label for="confirm-email">Confirm your email:</label></h3>
+          <input type="text" id="confirm-email" name="email-confirm" placeholder="" value="">
+          <h3><label for="pass">Enter your password:</label></h2>
+            <input type="password" id="pass" name="pass" value=""><br>
+            <h3><label for="confirm-pass">Confirm your password:</label></h2>
+              <input type="password" id="confirm-pass" name="pass-confirm" value=""><br>
+    </div>
+    <div class="address-details">
+      <h1>Address</h1>
+      <hr>
+      <h3><label for="postal">Postal Code</label></h2>
+        <input type="text" id="postal" name="postal-code" placeholder="" value="">
+        <h3><label for="address">Address</label></h2>
+          <input type="text" id="address" name="address" placeholder="" value="">
+          <h3><label for="city">City</label></h2>
+            <input type="text" id="city" name=" city" placeholder="" value="">
+    </div>
+    <input class="Login-submit" type="submit" name="Sign up" value="Sign Up">
+  </div>
+  <div class="footer">
+    <div id="link-list-left">
+      <p><strong>Useful Links</strong></p>
+      <a href="#">Page 1</a></a><br>
+      <a href="#">Page 2</a></a><br>
+      <a href="#">Page 3</a></a><br>
+      <a href="#">Page 4</a></a><br>
+      <a href="#">Page 5</a></a><br>
+      <a href="#">Page 6</a></a><br>
+      <a href="#">Page 7</a></a><br>
+      <a href="#">Page 8</a></a><br>
+    </div>
+
+    <div id="link-list-right">
+      <p><strong>Useful Links</strong></p>
+      <a href="#">Page X</a></a><br>
+      <a href="#">Page 2</a></a><br>
+      <a href="#">Page 3</a></a><br>
+      <a href="#">Page 4</a></a><br>
+      <a href="#">Page 5</a></a><br>
+      <a href="#">Page 6</a></a><br>
+      <a href="#">Page 7</a></a><br>
+      <a href="#">Page 8</a></a><br>
+    </div>
+
+    <div id="contact-info">
+      <p><strong>OUR SOCIALS</strong></p><br>
+      <a href="#" style="padding: 5px;"><img src="assets/FBLogo.png"></a>
+      <a href="#" style="padding: 5px;"><img src="assets/TwitterLogo.png"></a>
+      <a href="#" style="padding: 5px;"><img src="assets/InstaLogo.png"></a>
+      <a href="https://youtu.be/dQw4w9WgXcQ" style="padding: 5px;" target="_blank"><img src="assets/YTLogo.png"></a>
+    </div>
+  </div>
+</body>
+
 </html>
