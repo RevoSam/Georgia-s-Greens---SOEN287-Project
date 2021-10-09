@@ -466,11 +466,6 @@ img {
   color: rgb(121, 173, 135);
 }
 
-.forgot-pass{
-  color: rgb(121, 173, 135);
-  text-decoration: none;
-}
-
 .nav {
   color: black;
 }
@@ -521,4 +516,9 @@ img {
 .signup-page h1{
   font-family: sans-serif;
   color: rgb(33, 105, 0);
+}
+
+.login-page a{
+  color: rgb(121, 173, 135);
+  text-decoration: none;
 }
