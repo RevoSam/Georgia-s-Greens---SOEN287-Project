@@ -141,6 +141,25 @@ button {
     background-color:rgb(189, 221, 206);
 }
 
+.ailes{
+    background-color:khaki;
+    width:100%;
+    float:left;
+    font-size:20px;
+    text-align:center;
+    border:1px black solid;
+}
+.ailes p {
+    margin-top:10px;
+}
+
+.edit-button, .delete-button {
+    height:30px;
+    margin-top:5px;
+    width:70px;
+}
+
+
 /* Large Screens*/
     @media only screen and (max-width: 1200px) {
         header {
@@ -177,6 +196,11 @@ button {
 
         footer button{
             display:none;
+        }
+        .edit-button, .delete-button {
+            height:30px;
+            margin-top:5px;
+            width:90%;
         }
     }
 
