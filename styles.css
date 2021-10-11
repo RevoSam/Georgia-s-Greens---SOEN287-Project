@@ -522,19 +522,4 @@ img {
   text-decoration: none;
 }
 
-.reset-submit{
 
-  display: block;
-  margin: 20px auto auto 0;
-  text-decoration: none;
-  padding: 15px;
-  width: 15%;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(0, 0, 0);
-  text-align: center;
-  color: rgb(0, 0, 0);
-  transition: all 0.2s;
-  font-family: sans-serif;
-  font-weight: 300;
-  box-sizing: border-box;
-}
