@@ -70,8 +70,14 @@ aside a:hover {
 .inventory-table {
     margin-left:130px;
     margin-right:10px;
-    background-color:rgb(171, 238, 153);
     margin-bottom:50px;
+}
+
+#PageHeader {
+    padding-left: 10px;
+    text-align: center;
+    margin-top: -5px;
+    
 }
 
 table {
@@ -81,7 +87,7 @@ table {
 }
 
 th {
-    border: 2px solid black;  
+    border: 1px solid black;
     background-color: rgb(100, 134, 32);
     
 }
@@ -96,8 +102,7 @@ tr {
     text-align: center;
  }
 
-.user-table{
-    margin: 0.5px;
+.user-table{ 
     width:100%; 
 }
 

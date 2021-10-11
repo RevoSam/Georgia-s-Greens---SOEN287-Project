@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Product List</title>
+    <title>User List - Georgia's Greens</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="user-list.css">
@@ -10,26 +10,29 @@
 </head>
 
 <body>
-    <header>
-        <p>Welcome User</p>
+    <header id="PageHeader">
+        <h3><strong>USER LIST</strong></h3>
     </header>
     <aside>
-        <img src="../assets/GGLogo.png">
+        <img src="../assets/GGLogoPicture.png">
         <a href="backstore.html"><span class="glyphicon glyphicon-tags"></span>&nbsp&nbspProducts</a>
         <a href="user-list.html"><span class="glyphicon glyphicon-user"></span>&nbsp&nbspUsers</a>
         <a href="order-list.html"><span class="glyphicon glyphicon-credit-card"></span>&nbsp&nbspOrders</a>
     </aside>
     <div class="additional-components">
+        
         <form action="user-edit.html">
             <button>Add User</button>
         </form>
         <input type="text" placeholder="Search..">
-        <label for="search-keyword"><span class="glyphicon glyphicon-search"></span>&nbsp Search by keyword: </label> 
+        <label for="search-keyword"><span class="glyphicon glyphicon-search"></span>&nbsp Search User: </label> 
     </div>
+    
     <div class="margins">
         <div class="inventory-table">
             <div class="ailes">
                 <p>ALL USERS</p>
+            </div>
                 <table class="user-table">
                     <tr>
                         <th>Name</th>
@@ -38,6 +41,7 @@
                         <th>Password</th>
                         <th>Delivery Address</th>
                         <th>GG points</th>
+                        <th>Actions</th>
                     </tr>
 
                     <tr>
@@ -47,6 +51,10 @@
                         <td>*************</td>
                         <td>123 Streetname, City, Country</td>
                         <td>188</td>
+                        <td>
+                            <input type="button" value="EDIT">
+                            <input type="button" value="DELETE">
+                        </td>
                     </tr>
 
                     <tr>
@@ -56,6 +64,10 @@
                         <td>*************</td>
                         <td>123 Streetname, City, Country</td>
                         <td>200</td>
+                        <td>
+                            <input type="button" value="EDIT">
+                            <input type="button" value="DELETE">
+                        </td>
                     </tr>
 
                     <tr>
@@ -65,6 +77,10 @@
                         <td>*************</td>
                         <td>123 Streetname, City, Country</td>
                         <td>50</td>
+                        <td>
+                            <input type="button" value="EDIT">
+                            <input type="button" value="DELETE">
+                        </td>
                     </tr>
 
                     <tr>
@@ -74,6 +90,10 @@
                         <td>*************</td>
                         <td>123 Streetname, City, Country</td>
                         <td>100</td>
+                        <td>
+                            <input type="button" value="EDIT">
+                            <input type="button" value="DELETE">
+                        </td>
                     </tr>
 
                     <tr>
@@ -83,6 +103,10 @@
                         <td>*************</td>
                         <td>123 Streetname, City, Country</td>
                         <td>154</td>
+                        <td>
+                            <input type="button" value="EDIT">
+                            <input type="button" value="DELETE">
+                        </td>
                     </tr>
 
                     <tr>
@@ -92,10 +116,14 @@
                         <td>*************</td>
                         <td>123 Streetname, City, Country</td>
                         <td>0</td>
+                        <td>
+                            <input type="button" value="EDIT">
+                            <input type="button" value="DELETE">
+                        </td>
                     </tr>
                 </table>
                 
-            </div>
+            
         </div>
 </body>
 </html>
