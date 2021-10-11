@@ -111,7 +111,7 @@ input {
 
 button{
     padding:11px;
-    width:90%;
+    width:95%;
 }
 
 #add-to-order{
@@ -122,6 +122,19 @@ button{
     font-size:17px;
     margin-bottom:5px;
     padding:5px;
+}
+#save-button {
+    float:right;
+    margin-left:30px;
+    padding:2px;
+    width:25%;
+}
+
+#cancel-button{
+    float:left;
+    margin-left:0px;
+    padding:2px;
+    width:25%;
 }
 
 /*for xlarge screens*/
@@ -184,7 +197,7 @@ button{
     }
 
     button {
-        width:20%;
+        width:25%;
     }
 
     #add-to-order{
