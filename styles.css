@@ -475,7 +475,7 @@ img {
   cursor: pointer;
 }
 
-.login-submit{
+.login-submit {
   display: block;
   margin: 20px auto auto 0;
   text-decoration: none;
@@ -521,3 +521,5 @@ img {
   color: rgb(121, 173, 135);
   text-decoration: none;
 }
+
+

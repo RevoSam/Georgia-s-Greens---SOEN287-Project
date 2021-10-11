@@ -228,3 +228,12 @@ button {
         width:25%;
     }
   }
+
+  #description-under-user-edit-logo{
+    color: black;
+    margin: 20px;
+    font-size: 20px;
+    display:inline-block;
+    font-family: cursive;
+    color: rgb(1, 26, 1);
+  }
