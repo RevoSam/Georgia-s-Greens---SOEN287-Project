@@ -4,6 +4,8 @@ html {
 
 /*Side Bar*/
 .sidebar {
+    padding-top:30px;
+    text-align: center;
     position:fixed;
     height:100%;
     width:30%;
@@ -30,7 +32,7 @@ html {
 /*Division of the space by 25%*/
 .sml-container{
     width:25%;
-    float:left;
+    float:left;    
     text-align:center;
     padding:30px;
 }

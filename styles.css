@@ -419,6 +419,35 @@ img {
   color: rgb(125, 125, 125);
   font-weight: lighter;
 }
+
+#quantity-modifier {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+#quantity-text {
+  text-align: center;
+  width: 50px;
+  height: 35px;
+}
+
+#quantity-text::placeholder {
+  color:black;
+}
+
+.plus-minus-button {
+  width: 50px;
+  height: 35px;
+}
+
+.plus-minus-button:hover {
+  width: 50px;
+  height: 35px;
+  background-color: rgb(33, 105, 0);
+  color: yellow;
+}
+
 .button {
   display: block;
   margin-left: auto;
