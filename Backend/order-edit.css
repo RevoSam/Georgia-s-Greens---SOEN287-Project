@@ -139,6 +139,19 @@ button{
     width:25%;
 }
 
+.sidebar img {
+    margin-top:50%;
+}
+
+#description-under-user-edit-logo{
+    color: black;
+    margin: 20px;
+    font-size: 20px;
+    display:inline-block;
+    font-family: cursive;
+    color: rgb(1, 26, 1);
+  }
+
 /*for xlarge screens*/
   @media (min-width: 1150px) and (max-width: 1400px) {
     .right-side {
@@ -146,6 +159,10 @@ button{
     }
     .sidebar {
         width:20%;
+    }
+    .sidebar img {
+        margin-top:100%;
+        width:200px;
     }
   }
   
