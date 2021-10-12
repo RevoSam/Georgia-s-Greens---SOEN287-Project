@@ -65,6 +65,9 @@ aside a:hover {
     background-color:grey;
     text-decoration:none;
 }
+aside img {
+    margin-left:0;
+}
 
 /*Section where the products will be stored*/
 .inventory-table {
