@@ -18,6 +18,7 @@ header p {
     margin-left:30px;
 }
 
+
 /*Side Bar*/
 aside {
     position:fixed;
@@ -44,6 +45,10 @@ aside a {
 aside a:hover {
     background-color:grey;
     text-decoration:none;
+}
+
+aside img {
+    margin-left:0;
 }
 
 .additional-components button {
