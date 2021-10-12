@@ -385,9 +385,12 @@ img {
   padding-left: 1%;
   background-color: rgb(247, 247, 247);
 }
+
 .item_wrapper img {
-  height: auto;
-  max-width: 50%;
+  height: 100%;
+  width: auto;
+  margin-left: 5%;
+  margin-top: 5%;
 }
 
 .item_wrapper hr {
