@@ -4,6 +4,8 @@ html {
 
 /*Side Bar*/
 .sidebar {
+    padding-top:30px;
+    text-align: center;
     position:fixed;
     height:100%;
     width:30%;
@@ -231,4 +233,13 @@ button {
     button {
         width:25%;
     }
+  }
+
+  #description-under-user-edit-logo{
+    color: black;
+    margin: 20px;
+    font-size: 20px;
+    display:inline-block;
+    font-family: cursive;
+    color: rgb(1, 26, 1);
   }
