@@ -387,10 +387,13 @@ img {
 }
 
 .item_wrapper img {
-  height: 100%;
+  height: auto;
+  max-width: 50%;
+  
+  /*height: 100%;
   width: auto;
   margin-left: 5%;
-  margin-top: 5%;
+  margin-top: 5%;*/
 }
 
 .item_wrapper hr {
