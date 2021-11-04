@@ -27,14 +27,14 @@ for (var i = 0; i < buttons.length; i++) {
 // Session Storage
 // Meant to retrieve value from local storage but not replacing value in box ; Salman
 
-/*function getQty()
+function getQty()
 {
-  document.getElementById("quantity-text").innerHTML = localStorage.getItem('quantity');
+  document.getElementById("quantity-text").value = localStorage.getItem('quantity');
 }
 
 window.onload = getQty();
 
-*/
+
 //
 
 let showMoreBtn = document.getElementsByClassName("show-more");
