@@ -17,7 +17,7 @@ function changeQty(e) {
     textfield.value = fieldValue;
   }
   // stores input into local storage ; Salman
-  localStorage.setItem('quantity', textfield.value);
+  // localStorage.setItem('quantity', textfield.value);
 }
 
 for (var i = 0; i < buttons.length; i++) {
@@ -26,7 +26,7 @@ for (var i = 0; i < buttons.length; i++) {
 
 // Session Storage
 // Meant to retrieve value from local storage but not replacing value in box ; Salman
-
+/*
 function getQty()
 {
   document.getElementById("quantity-text").value = localStorage.getItem('quantity');
@@ -34,7 +34,7 @@ function getQty()
 
 window.onload = getQty();
 
-
+*/
 //
 
 let showMoreBtn = document.getElementsByClassName("show-more");
