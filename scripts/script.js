@@ -16,11 +16,26 @@ function changeQty(e) {
     if (fieldValue <= 0) fieldValue = 1;
     textfield.value = fieldValue;
   }
+  // stores input into local storage ; Salman
+  localStorage.setItem('quantity', textfield.value);
 }
 
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", changeQty);
 }
+
+// Session Storage
+// Meant to retrieve value from local storage but not replacing value in box ; Salman
+
+/*function getQty()
+{
+  document.getElementById("quantity-text").innerHTML = localStorage.getItem('quantity');
+}
+
+window.onload = getQty();
+
+*/
+//
 
 let showMoreBtn = document.getElementsByClassName("show-more");
 
