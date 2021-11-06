@@ -19,9 +19,14 @@ function changeQty() {
     if (fieldValue <= 0) fieldValue = 1;
     textfield.value = fieldValue;
   }
-
+  updatePrice();
   //Using SessionStorage to store the value of the specific quantity count of the specific page using currentPageID
   sessionStorage.setItem(currentPageID+'quantity', textfield.value);
+}
+
+function updatePrice(){
+  let quantity = sessionStorage.getItem(currentPageID+'quantity');
+  document.getElementById("total").value = '$' + (parseFloat(document.getElementById("price").innerText.split("$").pop()) * document.getElementById("quantity-text").value).toFixed(2)
 }
 
 //Attaching the event "click" and the function "changeQty" to all plus and minus buttons in the product buttons. 
@@ -34,6 +39,8 @@ function getQty()
 {
   if(sessionStorage.getItem(currentPageID+'quantity') != null)
     document.getElementById("quantity-text").value = sessionStorage.getItem(currentPageID+'quantity');
+
+  updatePrice();
 }
 
 window.onload = getQty(); //On page load, call getQty
@@ -101,5 +108,9 @@ addCart.addEventListener("click", add_to_cart);
 function get_cartStorage() {
   let cartObject = JSON.parse(sessionStorage.getItem("cart"));
   console.log(cartObject);
+
 }
+
+
+
 

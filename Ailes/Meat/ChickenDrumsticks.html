@@ -30,26 +30,37 @@
       </div>
     </div>
     <div class="body">
+      <!--Item Wrapper-->
       <div class="item_wrapper">
-        <img src="..\..\assets/Meat Products/ChickenDR.png">
+        <img src="../../assets/Meat Products/ChickenDR.png">
         <div class="item_details">
-        <h2 class="brand">Georgia's Greens</h2>
-        <span class="item_description">Fresh Chicken Drumsticks (15/pkg)</span>
-        <span class="item_price">$12.99</span>
-        <span class="item_price_insight">$1.8 / lb</span>
-        <div id="quantity-modifier">
-          <p style="margin-bottom: 0px; font-size: large;">Quantity: </p>
-          <input class="plus-minus-button" type="button" value="-">
-          <input id="quantity-text" type="text" placeholder="1" Value = 1>
-          <input  class="plus-minus-button" type="button" value="+">
+            <h2 class="brand">Georgia's Greens</h2>
+            <span class="item_description">Fresh Chicken Drumsticks (15/pkg)</span>
+            <span class="item_price"><span id = "price" class="item_price">$12.99</span></span>
+            <span class="item_price_insight"> $1.8 / lb </span>
+            <div id="quantity-modifier">
+                <p style="margin-bottom: 0px; font-size: large;">Quantity: </p>
+                <input class="plus-minus-button" type="button" value="-">
+                <input id="quantity-text" type="text" placeholder="1" Value = 1>
+                <input  class="plus-minus-button" type="button" value="+">
+                <p  style="margin-bottom: 0px; font-size: large;">Item Total:<br> </p>
+                <input  id = "total" type = "text" value = "9.99$" disabled = "disabled" style = "padding:10px;">
+              </div>
+            <a href="" class="button">Add to Cart</a>
+            <div class="more-desc">
+                <hr>
+                <a class="show-more" href="#">Show More</a>
+            </div>
+            <div id = "content-description" class = "hideContent">
+                <h2 class="brand description">Product Description</h2>
+                <p class="product_description">Fresh Chicken Drumsticks from Canadian-bred, ethically-raised chickens.</p>
+                <br>
+                <span class="item_number">Product Number: GGMP002_PK</span>
+                <br>
+            </div>
         </div>
-        <a href="" class="button">Add to Cart</a>
-        <hr>
-        <h2 class="brand description">Product Description</h2>
-        <p class="product_description">Chicken drumsticks, 15 per package</p>
-        <span class="item_number">Product Number: GGMP002_PK</span>
-      </div>
-      </div>
+    </div>
+    <!--End Item Wrapper-->
     </div>
     <div class="footer">
       <div id="link-list-left">
