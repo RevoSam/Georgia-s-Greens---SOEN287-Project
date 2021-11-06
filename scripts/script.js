@@ -5,7 +5,7 @@ var currentPageURL = window.location.pathname;
 var currentPageID = currentPageURL.split("/").pop();
 
 function changeQty() {
-  
+
   var valueButton = this.getAttribute("value");
   let textfield = document.getElementById("quantity-text");
   let value = parseInt(textfield.value, 10);
@@ -21,7 +21,7 @@ function changeQty() {
   }
 
   //Using SessionStorage to store the value of the specific quantity count of the specific page using currentPageID
-  sessionStorage.setItem(currentPageID+'quantity', textfield.value);
+  sessionStorage.setItem(currentPageID + 'quantity', textfield.value);
 }
 
 //Attaching the event "click" and the function "changeQty" to all plus and minus buttons in the product buttons. 
@@ -30,10 +30,9 @@ for (var i = 0; i < buttons.length; i++) {
 }
 
 //The function loads the appropriate values for the specific page from sessionStorage. Called when page is first loaded. 
-function getQty()
-{
-  if(sessionStorage.getItem(currentPageID+'quantity') != null)
-    document.getElementById("quantity-text").value = sessionStorage.getItem(currentPageID+'quantity');
+function getQty() {
+  if (sessionStorage.getItem(currentPageID + 'quantity') != null)
+    document.getElementById("quantity-text").value = sessionStorage.getItem(currentPageID + 'quantity');
 }
 
 window.onload = getQty(); //On page load, call getQty

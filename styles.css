@@ -569,7 +569,7 @@ img {
   display: block;
   margin: 20px auto auto 0;
   text-decoration: none;
-  padding: 15px;
+  padding: 10px 15px;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(0, 0, 0);
   text-align: center;
@@ -599,6 +599,7 @@ img {
 .signup-page h3 {
   font-family: sans-serif;
   color: rgb(121, 173, 135);
+  padding: 5px 0px 0px 0px;
 }
 
 .signup-page h1 {
@@ -609,6 +610,29 @@ img {
 .login-page a {
   color: rgb(121, 173, 135);
   text-decoration: none;
+}
+
+.form-field input {
+  border: 1px solid #1b1919;
+  border-radius: 4px;
+  padding: 6px;
+  display: block;
+  font-family: inherit;
+  width: 250px;
+}
+
+.form-error-message {
+  visibility: hidden;
+  position: absolute;
+}
+
+.form-field.error .form-error-message {
+  visibility: visible;
+  color: red;
+}
+
+.form-field.error input {
+  border-color: red;
 }
 
 #cart-title {
