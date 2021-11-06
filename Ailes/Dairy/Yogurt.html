@@ -37,19 +37,26 @@
             <div class="item_details">
                 <h2 class="brand">Georgia's Greens</h2>
                 <span class="item_description">Strawberry Greek Yogurt ( 350 g )</span>
-                <span class="item_price">$6.99</span>
+                <span class="item_price">$<span id = "price" class="item_price">6.99</span></span>
                 <span class="item_price_insight"> $1.997 / 100g </span>
                 <div id="quantity-modifier">
                     <p style="margin-bottom: 0px; font-size: large;">Quantity: </p>
                     <input class="plus-minus-button" type="button" value="-">
                     <input id="quantity-text" type="text" placeholder="1" Value = 1>
                     <input  class="plus-minus-button" type="button" value="+">
+                    <p  style="margin-bottom: 0px; font-size: large;">Item Total:<br> </p>
+                    <input  id = "total" type = "text" value = "6.99$" disabled = "disabled" style = "padding:10px;">
                   </div>
                 <a href="" class="button">Add to Cart</a>
-                <hr>
-                <h2 class="brand description">Product Description</h2>
-                <p class="product_description">High in protein and vitamin</p>
-                <span class="item_number">Product Number: SMXL324_DP</span>
+                <div class="more-desc">
+                    <hr>
+                    <a class="show-more" href="#">Show More</a>
+                </div>
+                <div id = "content-description" class = "hideContent">
+                    <h2 class="brand description">Product Description</h2>
+                    <p class="product_description">Good Yogurt</p>
+                    <span class="item_number">Product Number: SRW221_DP</span>
+                </div>
             </div>
         </div>
     </div>
@@ -87,6 +94,7 @@
                     src="..\..\assets/YTLogo.png"></a>
         </div>
     </div>
+    <script type = "text/javascript" src="../../scripts/dairy_script.js"></script>
 </body>
 
 </html>

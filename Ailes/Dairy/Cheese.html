@@ -38,19 +38,26 @@
             <div class="item_details">
                 <h2 class="brand">Georgia's Greens</h2>
                 <span class="item_description">Cheddar Cheese ( 450 g )</span>
-                <span class="item_price">$9.99</span>
+                <span class="item_price">$<span id = "price" class="item_price">9.99</span></span>
                 <span class="item_price_insight"> $2.22 / 100g </span>
                 <div id="quantity-modifier">
                     <p style="margin-bottom: 0px; font-size: large;">Quantity: </p>
                     <input class="plus-minus-button" type="button" value="-">
                     <input id="quantity-text" type="text" placeholder="1" Value = 1>
                     <input  class="plus-minus-button" type="button" value="+">
+                    <p  style="margin-bottom: 0px; font-size: large;">Item Total:<br> </p>
+                    <input  id = "total" type = "text" value = "9.99$" disabled = "disabled" style = "padding:10px;">
                   </div>
                 <a href="" class="button">Add to Cart</a>
-                <hr>
-                <h2 class="brand description">Product Description</h2>
-                <p class="product_description">High quality cheddar cheese</p>
-                <span class="item_number">Product Number: SMXL121_DP</span>
+                <div class="more-desc">
+                    <hr>
+                    <a class="show-more" href="#">Show More</a>
+                </div>
+                <div id = "content-description" class = "hideContent">
+                    <h2 class="brand description">Product Description</h2>
+                    <p class="product_description">Good Cheese</p>
+                    <span class="item_number">Product Number: SMXL1421_DP</span>
+                </div>
             </div>
         </div>
         <!--End Item Wrapper-->
@@ -67,7 +74,6 @@
             <a href="#">Page 7</a></a><br>
             <a href="#">Page 8</a></a><br>
         </div>
-
         <div id="link-list-right">
             <p><strong>Useful Links</strong></p>
             <a href="#">Page X</a></a><br>
@@ -79,7 +85,6 @@
             <a href="#">Page 7</a></a><br>
             <a href="#">Page 8</a></a><br>
         </div>
-
         <div id="contact-info">
             <p><strong>OUR SOCIALS</strong></p><br>
             <a href="#" style="padding: 5px;"><img src="..\..\assets/FBLogo.png"></a>
@@ -89,6 +94,7 @@
                     src="..\..\assets/YTLogo.png"></a>
         </div>
     </div>
+    <script type = "text/javascript" src="../../scripts/dairy_script.js"></script>
 </body>
 
 </html>
