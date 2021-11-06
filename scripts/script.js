@@ -66,6 +66,7 @@ function Product(id, item, price, qty) {
   this.qty = parseInt(qty);
 }
 
+/*
 function add_to_cart(e) {
   e.preventDefault();
   let id = document.getElementsByClassName("item_number")[0].innerHTML;
@@ -79,8 +80,106 @@ function add_to_cart(e) {
 }
 
 addCart.addEventListener("click", add_to_cart);
+document.write("HELLO");
 
 function get_cartStorage() {
   let cartObject = JSON.parse(sessionStorage.getItem("cart"));
   console.log(cartObject);
+}*/
+
+
+/* SHOPPING CART */
+
+
+//buttons
+let cartButtons = document.getElementsByClassName("cart-item-quantity-button");
+
+//using the buttons
+function changeCartQty(e) {
+
+  var myString = this.className.split(" ")[1].match(/item\d+/);
+  var int_data = parseInt(document.getElementById(myString).value,10);
+
+  if(this.value == "+")
+  {
+    if(document.getElementById(myString).value == "")
+      document.getElementById(myString).value = 1;
+    else
+      document.getElementById(myString).value = int_data + 1;
+      getCartTotal(myString,this.value);
+  }
+  else
+  {
+    if(document.getElementById(myString).value == "")
+      document.getElementById(myString).value = 0;
+
+    else if(!checkOOB(int_data-1))
+    {
+      document.getElementById(myString).value = int_data - 1;
+      getCartTotal(myString,this.value);
+    }
+  }
 }
+
+function checkOOB(value) {
+  if(value < 0)
+      return true;
+}
+
+for (var i = 0; i < cartButtons.length; i++) {
+  cartButtons[i].addEventListener("click", changeCartQty);
+}
+
+function getCartTotal(myString,sign)
+{
+  var new_subtotal = parseFloat(document.getElementById("subtotal").innerHTML);
+  
+  if(sign == "+")
+      new_subtotal = new_subtotal + parseFloat(document.getElementById(myString+"_price").innerHTML);
+  else
+      new_subtotal = new_subtotal - parseFloat(document.getElementById(myString+"_price").innerHTML);
+  
+  var GST = new_subtotal * 0.05;
+  var QST = new_subtotal * 0.09975;
+  
+  document.getElementById("subtotal").innerHTML = parseFloat(new_subtotal).toFixed(2);
+  document.getElementById("gst_total").innerHTML = parseFloat(GST).toFixed(2);
+  document.getElementById("qst_total").innerHTML = parseFloat(QST).toFixed(2);
+  document.getElementById("total").innerHTML = parseFloat(parseFloat(document.getElementById("subtotal").innerHTML) + parseFloat(document.getElementById("gst_total").innerHTML) + parseFloat(document.getElementById("qst_total").innerHTML)).toFixed(2);
+}
+
+
+
+//using the textbox
+
+var inputBoxes = document.getElementsByClassName("cart-item-quantity-input");
+
+function changeCartBox() {
+  if(isNaN(this.value))
+  {
+    alert("Only numbers are allowed")
+    this.value = 0;
+  }
+  else if(this.value.indexOf(".")!= -1)
+  {
+    alert("Cannot use decimal values");
+    this.value = parseInt(this.value);
+  }
+  var total = 0;
+  for(var i = 0; i < inputBoxes.length; i++)
+    total += inputBoxes[i].value * parseFloat(document.getElementById("item" + (i+1) + "_price").innerHTML);
+  document.getElementById("subtotal").innerHTML = parseFloat(total).toFixed(2);
+  document.getElementById("gst_total").innerHTML = parseFloat(total*0.05).toFixed(2);
+  document.getElementById("qst_total").innerHTML = parseFloat(total*0.0975).toFixed(2);
+  document.getElementById("total").innerHTML = parseFloat(parseFloat(document.getElementById("subtotal").innerHTML) + parseFloat(document.getElementById("gst_total").innerHTML) + parseFloat(document.getElementById("qst_total").innerHTML)).toFixed(2);
+}
+
+for(var i = 0; i < inputBoxes.length; i++)
+{
+  inputBoxes[i].addEventListener("keyup",changeCartBox)
+}
+
+
+
+
+

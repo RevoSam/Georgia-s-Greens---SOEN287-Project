@@ -51,14 +51,13 @@
                     </td>
                     <td>
                         <div class="cart-item-quantity">
-                            <button class="cart-item-quantity-button">+</button>
-                            <input class="cart-item-quantity-input" type="text" placeholder="1" maxlength="3"
-                                minlength="1">
-                            <button class="cart-item-quantity-button">-</button>
+                            <button class="cart-item-quantity-button item1_button" value = "+" >+</button>
+                            <input id = "item1" class="cart-item-quantity-input" type="text" placeholder="0" maxlength="3" minlength="1" value = "0">
+                            <button class="cart-item-quantity-button item1_button" value = "-">-</button>
                         </div>
                     </td>
                     <td>
-                        $13.99
+                        $<span id = "item1_price">13.99</span>
                     </td>
                     <td><span class="cart-item-delete">Delete</span></td>
                 </tr>
@@ -73,14 +72,14 @@
                     </td>
                     <td>
                         <div class="cart-item-quantity">
-                            <button class="cart-item-quantity-button">+</button>
-                            <input class="cart-item-quantity-input" type="text" placeholder="1" maxlength="3"
+                            <button class="cart-item-quantity-button item2_button" value = "+">+</button>
+                            <input id = "item2" class="cart-item-quantity-input" type="text" placeholder="0" maxlength="3" value = "0"
                                 minlength="1">
-                            <button class="cart-item-quantity-button">-</button>
+                            <button class="cart-item-quantity-button item2_button" value = "-">-</button>
                         </div>
                     </td>
                     <td>
-                        $0.79
+                        $<span id = "item2_price">0.79</span>
                     </td>
                     <td>
                         <span class="cart-item-delete">Delete</span>
@@ -94,14 +93,14 @@
                     </td>
                     <td>
                         <div class="cart-item-quantity">
-                            <button class="cart-item-quantity-button">+</button>
-                            <input class="cart-item-quantity-input" type="text" placeholder="1" maxlength="3"
+                            <button class="cart-item-quantity-button item3_button" value = "+">+</button>
+                            <input id = "item3" class="cart-item-quantity-input" type="text" placeholder="0" maxlength="3" value = "0"
                                 minlength="1">
-                            <button class="cart-item-quantity-button">-</button>
+                            <button class="cart-item-quantity-button item3_button" value = "-">-</button>
                         </div>
                     </td>
                     <td>
-                        $5.49
+                        $<span id = "item3_price">5.49</span>
                     </td>
                     <td>
                         <span class="cart-item-delete">Delete</span>
@@ -116,18 +115,18 @@
                     <span class="cart-summary-name"># of items:</span> <span class="cart-summary-value">3</span>
                 </li>
                 <li>
-                    <span class="cart-summary-name">Subtotal:</span> <span class="cart-summary-value">$20.27</span>
+                    <span class="cart-summary-name">Subtotal:</span> <span class="cart-summary-value">$<span id = "subtotal">0.00</span></span>
                 </li>
                 <li>
                     <span class="cart-summary-name">Estimated GST (5%):</span> <span
-                        class="cart-summary-value">$1.01</span>
+                        class="cart-summary-value">$<span id ="gst_total">0.00</span></span>
                 </li>
                 <li>
                     <span class="cart-summary-name">Estimated QST (9.975%):</span> <span
-                        class="cart-summary-value">$2.02</span>
+                        class="cart-summary-value">$<span id = "qst_total">0.00</span></span>
                 </li>
                 <li>
-                    <span class="cart-summary-name">Total:</span> <span class="cart-summary-value">$23.3</span>
+                    <span class="cart-summary-name">Total:</span> <span class="cart-summary-value">$<span id ="total">0.00</span></span>
                 </li>
             </ul>
             <span class="cart-summary-button">Checkout</span>
@@ -136,7 +135,6 @@
             </a>
         </div>
     </div>
-
     </div>
     <div class="footer">
         <div id="link-list-left">
@@ -172,3 +170,6 @@
                     src="assets/YTLogo.png"></a>
         </div>
     </div>
+    <script type = "text/javascript" src="scripts/script.js"></script>
+</body>
+</html>
