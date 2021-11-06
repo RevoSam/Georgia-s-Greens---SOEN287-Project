@@ -1,8 +1,11 @@
 "use strict";
 
 let buttons = document.getElementsByClassName("plus-minus-button");
+var currentPageURL = window.location.pathname;
+var currentPageID = currentPageURL.split("/").pop();
 
-function changeQty(e) {
+function changeQty() {
+  
   var valueButton = this.getAttribute("value");
   let textfield = document.getElementById("quantity-text");
   let value = parseInt(textfield.value, 10);
@@ -16,26 +19,41 @@ function changeQty(e) {
     if (fieldValue <= 0) fieldValue = 1;
     textfield.value = fieldValue;
   }
-  // stores input into local storage ; Salman
-  // localStorage.setItem('quantity', textfield.value);
+
+  //Using SessionStorage to store the value of the specific quantity count of the specific page using currentPageID
+  sessionStorage.setItem(currentPageID+'quantity', textfield.value);
 }
 
+//Attaching the event "click" and the function "changeQty" to all plus and minus buttons in the product buttons. 
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", changeQty);
 }
 
-// Session Storage
-// Meant to retrieve value from local storage but not replacing value in box ; Salman
-/*
+//The function loads the appropriate values for the specific page from sessionStorage. Called when page is first loaded. 
 function getQty()
 {
-  document.getElementById("quantity-text").value = localStorage.getItem('quantity');
+  if(sessionStorage.getItem(currentPageID+'quantity') != null)
+    document.getElementById("quantity-text").value = sessionStorage.getItem(currentPageID+'quantity');
 }
 
-window.onload = getQty();
+window.onload = getQty(); //On page load, call getQty
 
-*/
-//
+//Delete all stored quantities and values of this page from sessionStorage
+/*window.onbeforeunload = function(){
+  //deleteStorage();
+}
+
+function deleteStorage()
+{
+/*for (var quantityID in sessionStorage) {
+    if (quantityID.indexOf(currentPageID) === 0)
+      sessionStorage.removeItem(quantityID);
+  }
+  if (performance.navigation.type == performance.navigation.TYPE_RELOAD)
+  window.alert('reaches deleteStorage');
+  sessionStorage.removeItem(currentPageID+'quantity');
+  
+}*/
 
 let showMoreBtn = document.getElementsByClassName("show-more");
 
@@ -84,3 +102,4 @@ function get_cartStorage() {
   let cartObject = JSON.parse(sessionStorage.getItem("cart"));
   console.log(cartObject);
 }
+
