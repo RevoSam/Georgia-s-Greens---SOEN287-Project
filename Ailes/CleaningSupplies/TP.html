@@ -35,19 +35,34 @@
         <div class="item_details">
         <h2 class="brand">Georgia's Greens</h2>
         <span class="item_description">Soft Double Ply Toilet Paper (242 Sheets - 6 Rolls)</span>
-        <span class="item_price">$6.97</span>
+        
+        <span id = "price" class="item_price">$6.97</span>
+        
         <span class="item_price_insight">$1.162 / ea</span>
         <div id="quantity-modifier">
           <p style="margin-bottom: 0px; font-size: large;">Quantity: </p>
           <input class="plus-minus-button" type="button" value="-">
           <input id="quantity-text" type="text" placeholder="1" Value = 1>
           <input  class="plus-minus-button" type="button" value="+">
+
+          <p  style="margin-bottom: 0px; font-size: large;">Item Total:<br> </p>
+          <input  id = "total" type = "text" value = "6.97$" disabled = "disabled" style = "padding:10px;">
+        
+
         </div>
         <a id="add2Cart" href="" class="button">Add to Cart</a>
-        <hr>
-        <h2 class="brand description">Product Description</h2>
-        <p class="product_description">High-quality Double Ply Toilet Paper, soft and thick. (6 Rolls - 242 Sheets per Roll)</p>
-        <span class="item_number">Product Number: GGCP336_QT</span>
+
+        <div class="more-desc">
+          <hr>
+          <a class="show-more" href="">Show More</a>
+        </div>
+        
+        <div id = "content-description" class="hideContent">
+          <h2 class="brand description">Product Description</h2>
+          <p class="product_description">High-quality Double Ply Toilet Paper, soft and thick. (6 Rolls - 242 Sheets per Roll)</p>
+          <span class="item_number">Product Number: GGCP336_QT</span>
+        </div>
+        
       </div>
       </div>
     </div>

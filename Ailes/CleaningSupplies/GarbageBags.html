@@ -35,19 +35,32 @@
         <div class="item_details">
         <h2 class="brand">Georgia's Greens</h2>
         <span class="item_description">Garbage Bags (50 bags / roll)</span>
-        <span class="item_price">$5.99</span>
+        
+        <span id = "price" class="item_price">$5.99</span>
+        
         <span class="item_price_insight">$0.1198 / bag</span>
         <div id="quantity-modifier">
           <p style="margin-bottom: 0px; font-size: large;">Quantity: </p>
           <input class="plus-minus-button" type="button" value="-">
           <input id="quantity-text" type="text" placeholder="1" Value = 1>
           <input  class="plus-minus-button" type="button" value="+">
+          
+          <p  style="margin-bottom: 0px; font-size: large;">Item Total:<br> </p>
+          <input  id = "total" type = "text" value = "5.99$" disabled = "disabled" style = "padding:10px;">
+        
         </div>
         <a id="add2Cart" href="" class="button">Add to Cart</a>
-        <hr>
-        <h2 class="brand description">Product Description</h2>
-        <p class="product_description">Kitchen White garbage bags. 50 bags per roll</p>
-        <span class="item_number">Product Number: GGCP628_LP</span>
+        
+        <div class="more-desc">
+          <hr>
+          <a class="show-more" href="">Show More</a>
+        </div>
+        <div id = "content-description" class="hideContent">
+          <h2 class="brand description">Product Description</h2>
+          <p class="product_description">Kitchen White garbage bags. 50 bags per roll</p>
+          <span class="item_number">Product Number: GGCP628_LP</span>
+        </div>
+        
       </div>
       </div>
     </div>
