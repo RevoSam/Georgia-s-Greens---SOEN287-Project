@@ -384,6 +384,34 @@ function deleteEntireRow(e) {
   }
 }
 
+
+
+
+/*TEST FOR BOX UPDATE TO DELETE IF CAUSE PROBLEMS*/
+function updateExtendedTtl() {
+  document.getElementById("total").value =
+    (
+      parseFloat(document.getElementById("price").innerText.split("$").pop()) *
+      document.getElementById("quantity-text").value
+    ).toFixed(2) + "$";
+}
+
+//Make it change on text input
+function change_updateProductExtendedTtl() {
+  if (isNaN(this.value)) {
+    alert("Only numbers are allowed");
+    this.value = 0;
+  } else if (this.value.indexOf(".") != -1) {
+    alert("Cannot use decimal values");
+    this.value = parseInt(this.value);
+  }
+  updateExtendedTtl();
+}
+
+document.getElementById("quantity-text").addEventListener("keyup", change_updateProductExtendedTtl);
+/*TEST FOR BOX UPDATE TO DELETE IF CAUSE PROBLEMS*/
+
+
 /** End Script for Cart Pages */
 
 /*Script for product pages*/
