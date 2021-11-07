@@ -391,7 +391,7 @@ function deleteEntireRow(e) {
 function updateExtendedTtl() {
   document.getElementById("total").value =
     (
-      parseFloat(document.getElementById("price").innerText) *
+      parseFloat(document.getElementById("priceNum").innerText) *
       document.getElementById("quantity-text").value
     ).toFixed(2) + "$";
 }
