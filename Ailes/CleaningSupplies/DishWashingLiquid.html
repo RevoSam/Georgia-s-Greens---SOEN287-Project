@@ -35,19 +35,29 @@
         <div class="item_details">
         <h2 class="brand">Georgia's Greens</h2>
         <span class="item_description">Dishwashing Liquid (740 ml)</span>
-        <span class="item_price">$3.99</span>
+        <span id = "price"  class="item_price">$3.99</span>
         <span class="item_price_insight">$0.005 / ml</span>
         <div id="quantity-modifier">
           <p style="margin-bottom: 0px; font-size: large;">Quantity: </p>
           <input class="plus-minus-button" type="button" value="-">
           <input id="quantity-text" type="text" placeholder="1" Value = 1>
           <input  class="plus-minus-button" type="button" value="+">
+          <p  style="margin-bottom: 0px; font-size: large;">Item Total:<br> </p>
+          <input  id = "total" type = "text" value = "3.99$" disabled = "disabled" style = "padding:10px;">
+        
         </div>
         <a id="add2Cart" href="" class="button">Add to Cart</a>
-        <hr>
-        <h2 class="brand description">Product Description</h2>
-        <p class="product_description">Powerful grease cutting formula to clean dirty dishes.</p>
-        <span class="item_number">Product Number: GGCP501_GP</span>
+        <div class="more-desc">
+          <hr>
+          <a class="show-more" href="">Show More</a>
+        </div>
+        <div id = "content-description" class="hideContent">
+          <h2 class="brand description">Product Description</h2>
+          <p class="product_description">Powerful grease cutting formula to clean dirty dishes.</p>
+          <span class="item_number">Product Number: GGCP501_GP</span>
+        </div>
+        
+        
       </div>
       </div>
     </div>
