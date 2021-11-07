@@ -152,7 +152,6 @@ function updateSummary() {
       for (var i = 1; i < numberProducts; i++) {
         let qty = table.rows[i].cells[2].children[0].children[1].value;
         products[i - 1].qty = qty;
-        console.log(products[i - 1].id);
         var jsonString = JSON.stringify(products);
         window.localStorage.setItem("products", jsonString);
         let price = table.rows[i].cells[3].children[0].innerText;
@@ -181,12 +180,10 @@ function updateSummary() {
 
 function loadProducts() {
   if (window.localStorage.getItem("products") != null) {
-    //console.log(window.localStorage);
     products = new Array();
     var data = JSON.parse(window.localStorage.getItem("products"));
     for (var i = 0; i < data.length; i++) {
       products.push(data[i]);
-      console.log(products[i]);
     }
     loadCart();
   }
@@ -235,7 +232,6 @@ function add_to_cart(e) {
   var index = getProduct(id);
   if (index >= 0) {
     products[index].qty = parseInt(products[index].qty) + parseInt(product.qty);
-    console.log(products[index].item);
   } else {
     products.push(product);
   }
@@ -276,7 +272,6 @@ function loadCart() {
         var data = JSON.parse(window.localStorage.getItem("products"));
         for (var i = 0; i < data.length; i++) {
           products.push(data[i]);
-          console.log(products[i]);
         }
       }
       if (products.length > 0) {
@@ -305,7 +300,6 @@ function loadCart() {
 function createElements(element) {
   var product = new Object(element);
   var table = document.getElementById("cartTable");
-  //console.log(product);
   var newRow = document.createElement("tr");
 
   var cellimg = document.createElement("td");
