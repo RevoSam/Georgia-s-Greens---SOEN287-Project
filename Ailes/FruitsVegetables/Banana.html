@@ -33,26 +33,41 @@
     </div>
     <div class="body">
         <div class="item_wrapper">
-            <img src="../../assets/Fruits and Vegetables Products/Banana.png">
+            <img id="productImg" src="../../assets/Fruits and Vegetables Products/Banana.png">
             <div class="item_details">
-                <h2 class="brand">Georgia's Greens</h2>
-                <span class="item_description">Banana (190g avg.)</span>
-                <span class="item_price">$0.62</span>
-                <span class="item_price_insight">$0.62 / ea</span>
-                <div id="quantity-modifier">
-                    <p style="margin-bottom: 0px; font-size: large;">Quantity: </p>
-                    <input class="plus-minus-button" type="button" value="-">
-                    <input id="quantity-text" type="text" placeholder="1" Value=1>
-                    <input class="plus-minus-button" type="button" value="+">
-                </div>
-                <a href="" class="button">Add to Cart</a>
-                <hr>
-                <h2 class="brand description">Product Description</h2>
-                <p class="product_description">Organic Colombian Banana</p>
-                <span class="item_number">Product Number: FVCP742_MP</span>
+            <h2 class="brand">Georgia's Greens</h2>
+            <span class="item_description">Bananas</span>
+            
+            
+            <span id = "price" class = "item_price">$0.62</span></span>
+            
+            
+            <span class="item_price_insight">$0.62/ea</span>
+            <div id="quantity-modifier">
+              <p style="margin-bottom: 0px; font-size: large;">Quantity: </p>
+              <input class="plus-minus-button" type="button" value="-">
+              <input id="quantity-text" type="text" placeholder="1" value=1>
+              <input  class="plus-minus-button" type="button" value="+">
+              
+              
+              <p  style="margin-bottom: 0px; font-size: large;">Item Total:<br> </p>
+              <input  id = "total" type = "text" value = "0.62$" disabled = "disabled" style = "padding:10px;">
+            
+            
+            </div>
+            <a href="" id="add2Cart" class="button" ">Add to Cart</a>
+            <div class="more-desc">
+              <hr>
+              <a class="show-more" href="">Show More</a>
+            </div>
+            <div id = "content-description" class="hideContent">
+              <h2 class="brand description">Product Description</h2>
+              <p class="product_description">Fresh farm bananas.</p>
+              <br>
+              <span class="item_number">Product Number: GGFV002_PK</span>
             </div>
         </div>
-    </div>
+    </div></div>
     <div class="footer">
         <div id="link-list-left">
             <p><strong>Useful Links</strong></p>

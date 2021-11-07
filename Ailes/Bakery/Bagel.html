@@ -31,30 +31,41 @@
     </div>
     <div class="body">
       <div class="item_wrapper">
-        <img src="..\..\assets/Bakery Products/bagel.png">
+        <img id="productImg" src="../../assets/Bakery Products/bagel.png">
         <div class="item_details">
         <h2 class="brand">Georgia's Greens</h2>
         <span class="item_description">Pack of 4 Freshly Made Bagels</span>
-        <span class="item_price">$5.99</span>
-        <span class="item_price_insight">$1.25 / ea</span>
+        
+        
+        <span id = "price" class = "item_price">$5.99</span></span>
+        
+        
+        <span class="item_price_insight">$5.99/ea</span>
         <div id="quantity-modifier">
           <p style="margin-bottom: 0px; font-size: large;">Quantity: </p>
           <input class="plus-minus-button" type="button" value="-">
-          <input id="quantity-text" type="text" placeholder="1" Value = 1>
+          <input id="quantity-text" type="text" placeholder="1" value=1>
           <input  class="plus-minus-button" type="button" value="+">
+          
+          
+          <p  style="margin-bottom: 0px; font-size: large;">Item Total:<br> </p>
+          <input  id = "total" type = "text" value = "5.99$" disabled = "disabled" style = "padding:10px;">
+        
+        
         </div>
-        <a href="" id="add2Cart" class="button">Add to Cart</a>
+        <a href="" id="add2Cart" class="button" ">Add to Cart</a>
         <div class="more-desc">
           <hr>
-          <a class="show-more" href="#">Show More</a>
+          <a class="show-more" href="">Show More</a>
         </div>
         <div id = "content-description" class="hideContent">
           <h2 class="brand description">Product Description</h2>
           <p class="product_description">Plain Bagel, Pack containing 4 Bagels</p>
-          <span class="item_number">Product Number: GGBP201_PK</span>
+          <br>
+          <span class="item_number">Product Number: GGBP001_PK</span>
         </div>
-      </div>
-      </div>
+    </div>
+</div></div>
     </div>
     <div class="footer">
       <div id="link-list-left">

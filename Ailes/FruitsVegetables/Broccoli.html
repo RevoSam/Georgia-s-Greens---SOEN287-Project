@@ -33,26 +33,41 @@
     </div>
     <div class="body">
         <div class="item_wrapper">
-            <img src="../../assets/Fruits and Vegetables Products/Broccoli.png">
+            <img id="productImg" src="../../assets/Fruits and Vegetables Products/Broccoli.png">
             <div class="item_details">
-                <h2 class="brand">Georgia's Greens</h2>
-                <span class="item_description">Broccoli (255g avg.)</span>
-                <span class="item_price">$3.99</span>
-                <span class="item_price_insight">$3.99 / ea</span>
-                <div id="quantity-modifier">
-                    <p style="margin-bottom: 0px; font-size: large;">Quantity: </p>
-                    <input class="plus-minus-button" type="button" value="-">
-                    <input id="quantity-text" type="text" placeholder="1" Value=1>
-                    <input class="plus-minus-button" type="button" value="+">
-                </div>
-                <a href="" class="button">Add to Cart</a>
-                <hr>
-                <h2 class="brand description">Product Description</h2>
-                <p class="product_description">Whole Head of Broccoli, Trimmed Stem</p>
-                <span class="item_number">Product Number: FVCP678_MP</span>
+            <h2 class="brand">Georgia's Greens</h2>
+            <span class="item_description">Broccoli (255g avg.)</span>
+            
+            
+            <span id = "price" class = "item_price">$3.99</span></span>
+            
+            
+            <span class="item_price_insight">$3.99/ea</span>
+            <div id="quantity-modifier">
+              <p style="margin-bottom: 0px; font-size: large;">Quantity: </p>
+              <input class="plus-minus-button" type="button" value="-">
+              <input id="quantity-text" type="text" placeholder="1" value=1>
+              <input  class="plus-minus-button" type="button" value="+">
+              
+              
+              <p  style="margin-bottom: 0px; font-size: large;">Item Total:<br> </p>
+              <input  id = "total" type = "text" value = "3.99$" disabled = "disabled" style = "padding:10px;">
+            
+            
+            </div>
+            <a href="" id="add2Cart" class="button" ">Add to Cart</a>
+            <div class="more-desc">
+              <hr>
+              <a class="show-more" href="">Show More</a>
+            </div>
+            <div id = "content-description" class="hideContent">
+              <h2 class="brand description">Product Description</h2>
+              <p class="product_description">Fresh Broccoli</p>
+              <br>
+              <span class="item_number">Product Number: GGFV003_PK</span>
             </div>
         </div>
-    </div>
+    </div></div>
     <div class="footer">
         <div id="link-list-left">
             <p><strong>Useful Links</strong></p>
