@@ -400,13 +400,14 @@ img {
 }
 
 .item_wrapper img {
-  height: auto;
-  max-width: 50%;
+  /*height: auto;
+  max-width: 50%;*/
 
-  /*height: 100%;
+  height: 100%;
   width: auto;
-  margin-left: 5%;
-  margin-top: 5%;*/
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  
 }
 
 .item_wrapper hr {
@@ -1027,8 +1028,7 @@ img {
   background-color: rgb(247, 247, 247);
   text-align: center;
   margin-top: -9%;
-  font-size: 100%;
-  font-size: 3.5vw;
+ 
   border: transparent;
   border-radius: 2px;
   cursor: pointer;
