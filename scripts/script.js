@@ -391,21 +391,18 @@ function deleteEntireRow(e) {
 function updateExtendedTtl() {
   document.getElementById("total").value =
     (
-      parseFloat(document.getElementById("price").innerText) *
+      parseFloat(document.getElementById("price").innerText.split("$").pop()) *
       document.getElementById("quantity-text").value
     ).toFixed(2) + "$";
 }
 
 //Make it change on text input
 function change_updateProductExtendedTtl() {
-  if (isNaN(this.value)) 
-  {
-    alert("Only integers are allowed!");
+  if (isNaN(this.value)) {
+    alert("Only numbers are allowed");
     this.value = 0;
-  }
-  else if (this.value.indexOf(".") != -1)
-  {
-    alert("Only integers are allowed!");
+  } else if (this.value.indexOf(".") != -1) {
+    alert("Cannot use decimal values");
     this.value = parseInt(this.value);
   }
   updateExtendedTtl();
