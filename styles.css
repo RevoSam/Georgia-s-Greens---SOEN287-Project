@@ -130,8 +130,7 @@ img {
   }
 
   .menu .dropdown {
-    float: none;
-    display: block;
+    
     width: 100%;
     margin: 0;
   }
@@ -156,7 +155,7 @@ img {
 .dropdown-content {
   display: none;
   position: absolute;
-  transition: all 0.5s ease;
+  transition: all 0.25s ease;
   background-color: #f1f1f1;
   margin-top: 2.25rem;
   min-width: 100%;
@@ -170,7 +169,7 @@ img {
   padding: 8px;
   text-decoration: none;
   display: block;
-  transition-duration: 0.5s;
+  transition-duration: 0.25s;
 }
 
 .footer {
@@ -400,13 +399,14 @@ img {
 }
 
 .item_wrapper img {
-  height: auto;
-  max-width: 50%;
+  /*height: auto;
+  max-width: 50%;*/
 
-  /*height: 100%;
+  height: 100%;
   width: auto;
-  margin-left: 5%;
-  margin-top: 5%;*/
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  
 }
 
 .item_wrapper hr {
@@ -525,6 +525,7 @@ img {
 
 .nav {
   color: black;
+  
 }
 
 .nav a:hover {
@@ -924,6 +925,20 @@ img {
     font-size: 4vw;
     text-align: center;
   }
+
+  #link-list-left {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+  }
+
+  #link-list-right {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+  }
 }
 
 /* END OF MY MEDIA FOR PRODUCTS*/
@@ -952,6 +967,37 @@ img {
     text-align: center;
     width: auto;
   }
+  #footer{
+    width: 100%;
+  text-align: center;
+  }
+
+  #link-list-left {
+    float:left;
+    
+    
+  }
+
+  #link-list-right {
+  
+    float: right;
+    
+  }
+
+  #contact-info {
+    width: 85%;
+    display: inline-block;
+    margin: 0 auto;
+    
+    padding-bottom: 50px;
+    
+  }
+
+  .nav {
+    color: black;
+  }
+
+  
 }
 /* END OF MEDIA FOR PRODUCTS*/
 
@@ -1027,8 +1073,7 @@ img {
   background-color: rgb(247, 247, 247);
   text-align: center;
   margin-top: -9%;
-  font-size: 100%;
-  font-size: 3.5vw;
+ 
   border: transparent;
   border-radius: 2px;
   cursor: pointer;
